@@ -21,7 +21,10 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentState = PlayerState.WALK;
         animator = GetComponent<Animator>();
+        animator.SetFloat("moveX", 0);
+        animator.SetFloat("moveY", -1f);
         myRigidbody = GetComponent<Rigidbody2D>();
     }
 
