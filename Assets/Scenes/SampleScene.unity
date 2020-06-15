@@ -14047,4 +14047,4 @@ MonoBehaviour:
   dialogBox: {fileID: 1138549728}
   dialogText: {fileID: 2027585353}
   dialog: Lake Ahead
-  dialogActive: 0
+  playerInRange: 0
