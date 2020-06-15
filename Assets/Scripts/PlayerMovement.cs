@@ -76,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
 
     void MoveCharacter()
     {
+        change.Normalize();
         // multiplying by Time.deltaTime makes this a very small amount each frame
         myRigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
