@@ -198,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.25
+  damage: 1
 --- !u!1 &65978317
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.25
+  damage: 1
 --- !u!1 &126920334
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  maxHealth: {fileID: 11400000, guid: 3a0f8c312709f45419b6792aabfe82f2, type: 2}
   health: 2
   enemyName: Lana the Log
   baseAttack: 1
@@ -491,6 +494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1.5
   knockTime: 0.2
+  damage: 0
 --- !u!1 &281872962
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.25
+  damage: 1
 --- !u!1 &589533710
 GameObject:
   m_ObjectHideFlags: 0
@@ -15268,6 +15273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.25
+  damage: 1
 --- !u!1 &2027585352
 GameObject:
   m_ObjectHideFlags: 0
