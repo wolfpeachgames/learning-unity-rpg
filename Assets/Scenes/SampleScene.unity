@@ -355,7 +355,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -5034061168752090764, guid: 25eaf2823459646b4b868cd05c4af72e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -447,9 +447,10 @@ MonoBehaviour:
   baseAttack: 1
   moveSpeed: 1.8
   target: {fileID: 0}
-  chaseRadius: 5
+  chaseRadius: 4
   attackRadius: 1.2
   homePosition: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!61 &126920341
 BoxCollider2D:
   m_ObjectHideFlags: 0
