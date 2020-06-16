@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EnemyState
+{
+    IDLE, WALK, ATTACK, STAGGER
+}
+
 public class Enemy : MonoBehaviour
 {
+    public EnemyState currentState;
     public int health;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
-
 
     // Start is called before the first frame update
     void Start()
