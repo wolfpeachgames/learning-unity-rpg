@@ -8,11 +8,12 @@ public class Log : Enemy
     public float chaseRadius;
     public float attackRadius;
     public Transform homePosition;
-
+    private Rigidbody2D myRigidBody;
 
     // Start is called before the first frame update
     void Start()
     {
+        myRigidBody = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag("Player").transform;
     }
 
@@ -28,7 +29,8 @@ public class Log : Enemy
     {
         if (ShouldChase())
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            myRigidBody.MovePosition(temp);
         }
     }
 
