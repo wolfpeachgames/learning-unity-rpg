@@ -39,7 +39,7 @@ public class Log : Enemy
     private bool ShouldChase()
     {
         float distance = Vector3.Distance(target.position, transform.position);
-        bool notBusy = (currentState == EnemyState.IDLE || currentState == EnemyState.WALK) && currentState != EnemyState.STAGGER;
+        bool notBusy = (currentState == EnemyState.IDLE || currentState == EnemyState.WALK) && (currentState != EnemyState.STAGGER);
         return (notBusy && distance <= chaseRadius && distance > attackRadius);
     }
 
