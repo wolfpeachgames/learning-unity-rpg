@@ -14,15 +14,16 @@ public class Knockback : MonoBehaviour
         {
             other.GetComponent<Pot>().Smash();
         }
+
         if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("Player"))
         {
             Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
+
             if (hit != null)
             {
                 Vector2 difference = hit.transform.position - transform.position;
                 difference = difference.normalized * thrust;
                 hit.AddForce(difference, ForceMode2D.Impulse);
-                //StartCoroutine(KnockCo(hit));
 
                 if (other.gameObject.CompareTag("enemy") && other.isTrigger) {
                     hit.GetComponent<Enemy>().currentState = EnemyState.STAGGER;
@@ -37,14 +38,4 @@ public class Knockback : MonoBehaviour
             }
         }
     }
-
-    //private IEnumerator KnockCo(Rigidbody2D enemy)
-    //{
-    //    if (enemy != null)
-    //    {
-    //        yield return new WaitForSeconds(knockTime);
-    //        enemy.velocity = Vector2.zero;
-    //        enemy.GetComponent<Enemy>().currentState = EnemyState.IDLE;
-    //    }
-    //}
 }
