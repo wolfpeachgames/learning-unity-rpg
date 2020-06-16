@@ -4,9 +4,7 @@ using UnityEngine;
 
 public enum PlayerState
 {
-    WALK,
-    ATTACK,
-    INTERACT
+    WALK, ATTACK, INTERACT
 }
 
 public class PlayerMovement : MonoBehaviour
