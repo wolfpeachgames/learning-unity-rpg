@@ -64091,7 +64091,6 @@ GameObject:
   - component: {fileID: 2093955205}
   - component: {fileID: 2093955208}
   - component: {fileID: 2093955207}
-  - component: {fileID: 2093955206}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -64278,33 +64277,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.62558556, y: 0.7564101}
   m_EdgeRadius: 0
---- !u!114 &2093955206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093955198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0b9aa1d04b784cc5b97e1036d772c56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  signal: {fileID: 11400000, guid: 57b66ca86a9f4471f8963b74fb2be063, type: 2}
-  signalEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2093955208}
-        m_MethodName: Disable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2093955207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64322,7 +64294,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2093955208}
-        m_MethodName: Enable
+        m_MethodName: ChangeContextClue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -64345,6 +64317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contextClue: {fileID: 1330402828}
+  contextActive: 0
 --- !u!1001 &2143686437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64571,8 +64544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7265acb96b0f845df902a0d9a0b85059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contextClueOn: {fileID: 11400000, guid: a6c7fa54c9a8c4ed2a813eae1d780596, type: 2}
-  contextClueOff: {fileID: 11400000, guid: 57b66ca86a9f4471f8963b74fb2be063, type: 2}
+  contextClueSignal: {fileID: 11400000, guid: a6c7fa54c9a8c4ed2a813eae1d780596, type: 2}
   dialogBox: {fileID: 1138549728}
   dialogText: {fileID: 2027585353}
   dialog: Lake Ahead
