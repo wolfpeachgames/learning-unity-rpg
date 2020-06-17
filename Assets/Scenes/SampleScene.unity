@@ -451,7 +451,7 @@ MonoBehaviour:
   moveSpeed: 1.8
   target: {fileID: 0}
   chaseRadius: 4
-  attackRadius: 1.2
+  attackRadius: 1.4
   homePosition: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &126920341
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1.5
   knockTime: 0.2
-  damage: 0
+  damage: 1
 --- !u!1 &281872962
 GameObject:
   m_ObjectHideFlags: 0
@@ -9238,6 +9238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457649184}
   - component: {fileID: 1457649185}
+  - component: {fileID: 1457649186}
   m_Layer: 5
   m_Name: HeartContainers
   m_TagString: Untagged
@@ -9294,6 +9295,33 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &1457649186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457649183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0e9dbd3953404d930652735db0b60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 1258395100}
+  - {fileID: 1270290708}
+  - {fileID: 874422515}
+  - {fileID: 450968189}
+  - {fileID: 664861846}
+  fullHeart: {fileID: -4430392651179603617, guid: 16f834d3fdec24829965eab82f56ad78,
+    type: 3}
+  halfHeart: {fileID: -3276687688264177478, guid: 16f834d3fdec24829965eab82f56ad78,
+    type: 3}
+  emptyHeart: {fileID: -9053378900703536071, guid: 16f834d3fdec24829965eab82f56ad78,
+    type: 3}
+  heartContainers: {fileID: 11400000, guid: 771c64ecddac1439bb4eaf1e88b91f8a, type: 2}
+  playerCurrentHealth: {fileID: 11400000, guid: f459d515a88f34409a0618e5f00a88d7,
+    type: 2}
 --- !u!1 &1556469640
 GameObject:
   m_ObjectHideFlags: 0
@@ -9306,7 +9334,6 @@ GameObject:
   - component: {fileID: 1556469644}
   - component: {fileID: 1556469643}
   - component: {fileID: 1556469642}
-  - component: {fileID: 1556469645}
   m_Layer: 5
   m_Name: Health Frame
   m_TagString: Untagged
@@ -9331,7 +9358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 104.88, y: -74.79}
+  m_AnchoredPosition: {x: 104.87988, y: -74.79004}
   m_SizeDelta: {x: 204.93008, y: 118.993805}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556469642
@@ -9349,7 +9376,18 @@ MonoBehaviour:
   signal: {fileID: 11400000, guid: bcf8619ff85af48e5bafa7afdb5793b3, type: 2}
   signalEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1457649186}
+        m_MethodName: UpdateHearts
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1556469643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9388,31 +9426,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556469640}
   m_CullTransparentMesh: 0
---- !u!114 &1556469645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556469640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2da0e9dbd3953404d930652735db0b60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 1258395100}
-  - {fileID: 1270290708}
-  - {fileID: 874422515}
-  - {fileID: 450968189}
-  - {fileID: 664861846}
-  fullHeart: {fileID: -4430392651179603617, guid: 16f834d3fdec24829965eab82f56ad78,
-    type: 3}
-  halfHeart: {fileID: -3276687688264177478, guid: 16f834d3fdec24829965eab82f56ad78,
-    type: 3}
-  emptyHeart: {fileID: -9053378900703536071, guid: 16f834d3fdec24829965eab82f56ad78,
-    type: 3}
-  heartContainers: {fileID: 11400000, guid: 771c64ecddac1439bb4eaf1e88b91f8a, type: 2}
 --- !u!1 &1603394623
 GameObject:
   m_ObjectHideFlags: 0

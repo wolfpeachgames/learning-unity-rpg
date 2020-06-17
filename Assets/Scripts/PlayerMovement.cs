@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum PlayerState
 {
-    IDLE, WALK, ATTACK, INTERACT, STAGGER
+    IDLE, WALK, ATTACK, INTERACT, STAGGER, DEAD
 }
 
 public class PlayerMovement : MonoBehaviour
@@ -77,18 +77,26 @@ public class PlayerMovement : MonoBehaviour
     void MoveCharacter()
     {
         change.Normalize();
+        Debug.Log(change);
         // multiplying by Time.deltaTime makes this a very small amount each frame
-        myRigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
+        Vector2 distanceToMove = transform.position + change * speed * Time.deltaTime;
+        Debug.Log(distanceToMove);
+        myRigidbody.MovePosition(distanceToMove);
     }
 
 
     public void Knock(float knockTime, float damage)
     {
-        currentHealth.initialValue -= damage;
-        if (currentHealth.initialValue > 0)
+        currentHealth.RuntimeValue -= damage;
+        playerHealthSignal.Raise();
+        if (currentHealth.RuntimeValue > 0)
         {
-            playerHealthSignal.Raise();
             StartCoroutine(KnockCo(knockTime));
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+            currentState = PlayerState.DEAD;
         }
     }
 
