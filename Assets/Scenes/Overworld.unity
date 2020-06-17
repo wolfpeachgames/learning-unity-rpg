@@ -51616,6 +51616,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: a75e48eaf0f7549c3874438239e4d688,
         type: 2}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 9160966100665067936, guid: b5726da342de942ccbf4d88a162d48f3,
+        type: 3}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 1319694189176679116, guid: afb20b21cab064168b041ebaf001dd51,
+        type: 3}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebf065394297040128ab01b5f0da77d4, type: 3}
 --- !u!1 &1728023726 stripped
@@ -63705,7 +63722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093955198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: 4.08, z: 0}
+  m_LocalPosition: {x: 5.49, y: -2.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1880465933}
