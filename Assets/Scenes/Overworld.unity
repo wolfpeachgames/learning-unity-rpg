@@ -377,12 +377,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126920334}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.6, y: -4.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 171170710}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &126920338
 BoxCollider2D:
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 171170710}
   - component: {fileID: 171170709}
   m_Layer: 0
-  m_Name: Room3
+  m_Name: Room3-River1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -539,6 +539,7 @@ Transform:
   - {fileID: 524002629}
   - {fileID: 450322400}
   - {fileID: 244413728}
+  - {fileID: 126920337}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7414,6 +7415,31 @@ PrefabInstance:
       propertyPath: playerChange.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: needText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeName
+      value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: displayTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 281872962}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeText
+      value: 
+      objectReference: {fileID: 281872965}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -27728,6 +27754,8 @@ RectTransform:
   - {fileID: 1700649504}
   - {fileID: 948337970}
   - {fileID: 1698560487}
+  - {fileID: 306179548463402064}
+  - {fileID: 1229916940}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27769,6 +27797,31 @@ PrefabInstance:
       propertyPath: playerChange.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeName
+      value: Homestead
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: displayTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: needText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 281872962}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeText
+      value: 
+      objectReference: {fileID: 281872965}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -27884,10 +27937,35 @@ PrefabInstance:
       propertyPath: playerChange.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: needText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeName
+      value: River
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: displayTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 281872962}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeText
+      value: 
+      objectReference: {fileID: 281872965}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
-      value: RoomTransferRight (1)
+      value: RoomTransferLeft
       objectReference: {fileID: 0}
     - target: {fileID: 215092709316003818, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
@@ -33265,6 +33343,31 @@ PrefabInstance:
       propertyPath: playerChange.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: needText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeName
+      value: Homestead
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: displayTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 281872962}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeText
+      value: 
+      objectReference: {fileID: 281872965}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -33482,12 +33585,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229916935}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.47, y: -2.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 905314674}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1254288130
 GameObject:
@@ -33522,7 +33625,7 @@ MonoBehaviour:
   cameraChange: {x: 0, y: -25}
   playerChange: {x: 0, y: -1, z: 0}
   needText: 1
-  placeName: The Homestead
+  placeName: Homestead
   displayTime: 3
   text: {fileID: 281872962}
   placeText: {fileID: 281872965}
@@ -33804,7 +33907,7 @@ GameObject:
   - component: {fileID: 1297797244}
   - component: {fileID: 1297797243}
   m_Layer: 0
-  m_Name: Room1.5
+  m_Name: Room1.5-Town
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34093,6 +34196,31 @@ PrefabInstance:
       propertyPath: playerChange.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: needText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeName
+      value: Town
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: displayTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 281872962}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeText
+      value: 
+      objectReference: {fileID: 281872965}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -34280,7 +34408,7 @@ GameObject:
   - component: {fileID: 1461325735}
   - component: {fileID: 1461325734}
   m_Layer: 0
-  m_Name: Room4
+  m_Name: Room4-River2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51665,7 +51793,7 @@ PrefabInstance:
     - target: {fileID: 4723983828934186793, guid: ebf065394297040128ab01b5f0da77d4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4723983828934186793, guid: ebf065394297040128ab01b5f0da77d4,
         type: 3}
@@ -51801,6 +51929,31 @@ PrefabInstance:
       propertyPath: playerChange.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: needText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeName
+      value: River
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: displayTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 281872962}
+    - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
+        type: 3}
+      propertyPath: placeText
+      value: 
+      objectReference: {fileID: 281872965}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -63589,7 +63742,7 @@ GameObject:
   - component: {fileID: 1951078081}
   - component: {fileID: 1951078080}
   m_Layer: 0
-  m_Name: Room5
+  m_Name: Room5-Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63993,7 +64146,7 @@ PrefabInstance:
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
-      value: RoomTransferUp
+      value: RoomTransferUp1
       objectReference: {fileID: 0}
     - target: {fileID: 215092709316003818, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
@@ -64077,7 +64230,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 905314674}
     m_Modifications:
     - target: {fileID: 79133139987725284, guid: fc5a726404b514cddb0bccb5d7a83ce5,
         type: 3}
@@ -64107,17 +64260,17 @@ PrefabInstance:
     - target: {fileID: 2407112002438078251, guid: fc5a726404b514cddb0bccb5d7a83ce5,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2407112002438078251, guid: fc5a726404b514cddb0bccb5d7a83ce5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2407112002438078251, guid: fc5a726404b514cddb0bccb5d7a83ce5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2407112002438078251, guid: fc5a726404b514cddb0bccb5d7a83ce5,
         type: 3}
@@ -64127,7 +64280,7 @@ PrefabInstance:
     - target: {fileID: 2407112002438078251, guid: fc5a726404b514cddb0bccb5d7a83ce5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2407112002438078251, guid: fc5a726404b514cddb0bccb5d7a83ce5,
         type: 3}
@@ -64205,3 +64358,9 @@ MonoBehaviour:
   dialogText: {fileID: 2027585353}
   dialog: Lake Ahead
   playerInRange: 0
+--- !u!4 &306179548463402064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2407112002438078251, guid: fc5a726404b514cddb0bccb5d7a83ce5,
+    type: 3}
+  m_PrefabInstance: {fileID: 306179548463402058}
+  m_PrefabAsset: {fileID: 0}
