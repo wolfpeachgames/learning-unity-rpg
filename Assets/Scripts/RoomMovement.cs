@@ -29,11 +29,11 @@ public class RoomMovement : MonoBehaviour
     // Move from one map to another
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
+            other.transform.position += playerChange;
             cam.minPosition += cameraChange;
             cam.maxPosition += cameraChange;
-            other.transform.position += playerChange;
 
             if (needText)
             {
