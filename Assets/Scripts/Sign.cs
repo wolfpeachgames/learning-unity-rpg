@@ -5,16 +5,20 @@ using UnityEngine.UI;
 
 public class Sign : MonoBehaviour
 {
+    public Signal contextClueOn;
+    public Signal contextClueOff;
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
     public bool playerInRange;
+
 
     // Start is called before the first frame update
     void Start()
     {
         
     }
+
 
     // Update is called once per frame
     void Update()
@@ -32,19 +36,23 @@ public class Sign : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
+            contextClueOn.Raise();
         }
     }
+
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            contextClueOff.Raise();
             dialogBox.SetActive(false);
         }
     }
