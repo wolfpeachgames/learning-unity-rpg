@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public PlayerState currentState;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
+    public VectorValue startingPosition;
 
 
     // Start is called before the first frame update
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1f);
         myRigidbody = GetComponent<Rigidbody2D>();
+        transform.position = startingPosition.initialValue;
     }
 
 
@@ -77,10 +79,8 @@ public class PlayerMovement : MonoBehaviour
     void MoveCharacter()
     {
         change.Normalize();
-        Debug.Log(change);
         // multiplying by Time.deltaTime makes this a very small amount each frame
         Vector2 distanceToMove = transform.position + change * speed * Time.deltaTime;
-        Debug.Log(distanceToMove);
         myRigidbody.MovePosition(distanceToMove);
     }
 
