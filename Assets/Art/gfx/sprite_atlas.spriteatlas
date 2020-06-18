@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 781761
+    totalSpriteSurfaceArea: 782039
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -111,6 +111,7 @@ SpriteAtlas:
   - {fileID: 794369475904173520, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
   - {fileID: -4702585941336802017, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
   - {fileID: 2180825371451227870, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
+  - {fileID: -2588858940941751785, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
   - {fileID: -6692555241838817836, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
   - {fileID: 7113705111667027848, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
   - {fileID: -4814240625825854991, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
@@ -1646,6 +1647,7 @@ SpriteAtlas:
   - {fileID: -8041784067552993899, guid: 7471a7c8e641e4f4eaeccfd3b935bfb7, type: 3}
   - {fileID: 1532286108747742640, guid: 7471a7c8e641e4f4eaeccfd3b935bfb7, type: 3}
   - {fileID: 147799070741053269, guid: 7471a7c8e641e4f4eaeccfd3b935bfb7, type: 3}
+  - {fileID: 21300000, guid: 05f83189a18074033ba84a834dbd6b9a, type: 3}
   - {fileID: 21300000, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
   m_PackedSpriteNamesToIndex:
   - character_14
@@ -1712,6 +1714,7 @@ SpriteAtlas:
   - character_48
   - character_43
   - character_42
+  - character_78
   - character_41
   - character_40
   - character_76
@@ -3247,6 +3250,7 @@ SpriteAtlas:
   - modified gfx melee sprites_1
   - modified gfx melee sprites_2
   - modified gfx melee sprites_3
+  - key
   - NPC_test
   m_Tag: sprite_atlas
   m_IsVariant: 0

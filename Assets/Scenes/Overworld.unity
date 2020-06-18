@@ -170,6 +170,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInRange: 0
   contextClueSignal: {fileID: 11400000, guid: a6c7fa54c9a8c4ed2a813eae1d780596, type: 2}
+  contents: {fileID: 11400000, guid: 625094c4ee9ea4278ac24a6c301c7aeb, type: 2}
+  playerInventory: {fileID: 11400000, guid: 1e2bde16ca07a405393925b69e270ec3, type: 2}
+  isOpen: 0
+  receiveItemSignal: {fileID: 11400000, guid: 60544310500844940ac07e92f6668f25, type: 2}
+  dialogBox: {fileID: 1138549728}
+  dialogText: {fileID: 2027585353}
 --- !u!61 &13952768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64156,7 +64162,18 @@ MonoBehaviour:
   signal: {fileID: 11400000, guid: 60544310500844940ac07e92f6668f25, type: 2}
   signalEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2093955202}
+        m_MethodName: ReceiveItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!212 &1927872743
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64193,8 +64210,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -112893125
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -64344,11 +64361,11 @@ GameObject:
   - component: {fileID: 2093955200}
   - component: {fileID: 2093955199}
   - component: {fileID: 2093955203}
-  - component: {fileID: 2093955202}
   - component: {fileID: 2093955204}
   - component: {fileID: 2093955205}
   - component: {fileID: 2093955208}
   - component: {fileID: 2093955207}
+  - component: {fileID: 2093955202}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -64465,6 +64482,8 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: f459d515a88f34409a0618e5f00a88d7, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: bcf8619ff85af48e5bafa7afdb5793b3, type: 2}
   startingPosition: {fileID: 11400000, guid: a75e48eaf0f7549c3874438239e4d688, type: 2}
+  playerInventory: {fileID: 11400000, guid: 1e2bde16ca07a405393925b69e270ec3, type: 2}
+  receivedItemSprite: {fileID: 1927872743}
 --- !u!61 &2093955203
 BoxCollider2D:
   m_ObjectHideFlags: 0
