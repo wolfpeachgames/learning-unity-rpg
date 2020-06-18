@@ -35,7 +35,6 @@ public class Interactable : MonoBehaviour
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
-            Debug.Log("got here");
             playerInRange = false;
             contextClueSignal.Raise();
         }
