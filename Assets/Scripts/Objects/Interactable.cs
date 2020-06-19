@@ -26,7 +26,6 @@ public class Interactable : MonoBehaviour
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             playerInRange = true;
-            Debug.Log("enter 2d");
             contextClueSignal.Raise();
         }
     }
@@ -37,7 +36,6 @@ public class Interactable : MonoBehaviour
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             playerInRange = false;
-            Debug.Log("exit 2d");
             contextClueSignal.Raise();
         }
     }

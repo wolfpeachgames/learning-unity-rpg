@@ -8,8 +8,8 @@ public class Log : Enemy
     public float chaseRadius;
     public float attackRadius;
     public Transform homePosition;
-    private Rigidbody2D myRigidBody;
     public Animator anim;
+    public Rigidbody2D myRigidBody;
 
 
     // Start is called before the first frame update
@@ -19,6 +19,7 @@ public class Log : Enemy
         myRigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
+        anim.SetBool("wakeUp", true);
     }
 
 
@@ -29,7 +30,7 @@ public class Log : Enemy
     }
 
 
-    void CheckDistance()
+    public virtual void CheckDistance()
     {
         if (ShouldChase())
         {
@@ -46,7 +47,7 @@ public class Log : Enemy
     }
 
 
-    private bool ShouldChase()
+    public bool ShouldChase()
     {
         float distance = Vector3.Distance(target.position, transform.position);
         bool notBusy = (currentState == EnemyState.IDLE || currentState == EnemyState.WALK) && (currentState != EnemyState.STAGGER);
@@ -54,7 +55,7 @@ public class Log : Enemy
     }
 
 
-    private void ChangeAnim(Vector2 direction)
+    public void ChangeAnim(Vector2 direction)
     {
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
