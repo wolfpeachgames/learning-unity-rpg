@@ -73,7 +73,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void ReceiveItem()
     {
-        Debug.Log("got here");
         if (playerInventory.currentItem != null)
         {
             if (currentState != PlayerState.INTERACT)

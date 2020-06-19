@@ -49,8 +49,8 @@ public class Chest : Interactable
         playerInventory.currentItem = contents;
         // raise signal to player to animate
         receiveItemSignal.Raise();
-        // raise the context clue
-        contextClueSignal.Raise();
+        //// raise the context clue
+        //contextClueSignal.Raise();
         // set chest to open
         isOpen = true;
         anim.SetBool("opened", true);
