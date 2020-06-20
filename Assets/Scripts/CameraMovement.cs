@@ -8,12 +8,16 @@ public class CameraMovement : MonoBehaviour
     public float smoothing;
     public Vector2 maxPosition;
     public Vector2 minPosition;
+    public Animator anim;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
     }
+
 
     // LateUpdate always comes last
     void LateUpdate()
@@ -27,5 +31,19 @@ public class CameraMovement : MonoBehaviour
 
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
         }
+    }
+
+
+    public void BeginScreenKick()
+    {
+        anim.SetBool("kickActive", true);
+        StartCoroutine(ScreenKickCo());
+    }
+
+
+    public IEnumerator ScreenKickCo()
+    {
+        yield return null;
+        anim.SetBool("kickActive", false);
     }
 }
