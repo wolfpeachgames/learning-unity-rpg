@@ -4375,7 +4375,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1056341676
 GameObject:
@@ -5590,7 +5590,7 @@ Transform:
   - {fileID: 541234955}
   - {fileID: 1439847245}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8484785475875896266
 PrefabInstance:
@@ -5691,6 +5691,38 @@ PrefabInstance:
         type: 3}
       propertyPath: fadeWait
       value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraMin
+      value: 
+      objectReference: {fileID: 11400000, guid: ebb890b002e48454ba0f8ed0a21df2f0,
+        type: 2}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraMax
+      value: 
+      objectReference: {fileID: 11400000, guid: 64fc2de61dba24baf8ddf97a3df2d230,
+        type: 2}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraNewMax.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraNewMax.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraNewMin.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraNewMin.y
+      value: -11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebf065394297040128ab01b5f0da77d4, type: 3}

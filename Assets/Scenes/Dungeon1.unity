@@ -18873,6 +18873,38 @@ PrefabInstance:
       propertyPath: playerPosition.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraMin
+      value: 
+      objectReference: {fileID: 11400000, guid: ebb890b002e48454ba0f8ed0a21df2f0,
+        type: 2}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraMax
+      value: 
+      objectReference: {fileID: 11400000, guid: 64fc2de61dba24baf8ddf97a3df2d230,
+        type: 2}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraNewMax.x
+      value: -19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraNewMax.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraNewMin.x
+      value: -28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854038521934801071, guid: ebf065394297040128ab01b5f0da77d4,
+        type: 3}
+      propertyPath: cameraNewMin.y
+      value: -11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebf065394297040128ab01b5f0da77d4, type: 3}
 --- !u!1 &2058451743
@@ -18975,6 +19007,9 @@ MonoBehaviour:
   smoothing: 0.1
   maxPosition: {x: -10.7, y: -24.2}
   minPosition: {x: -13.3, y: -31}
+  anim: {fileID: 0}
+  camMin: {fileID: 11400000, guid: dc244d5d128c440c4970813885bea984, type: 2}
+  camMax: {fileID: 11400000, guid: dafcab6f3eac047eb8c1f77ab5688080, type: 2}
 --- !u!1 &2072911506
 GameObject:
   m_ObjectHideFlags: 0
