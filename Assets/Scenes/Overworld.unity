@@ -310,6 +310,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7528097157571061611}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &132246790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7735336951237408037, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+    type: 3}
+  m_PrefabInstance: {fileID: 448120851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &132246792 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5230187558178251185, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+    type: 3}
+  m_PrefabInstance: {fileID: 448120851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132246790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &171170708
 GameObject:
   m_ObjectHideFlags: 0
@@ -7025,12 +7043,12 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246790}
     - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: placeText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246792}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -27550,12 +27568,12 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246790}
     - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: placeText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246792}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -27720,12 +27738,12 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246790}
     - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: placeText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246792}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -34348,12 +34366,12 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246790}
     - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: placeText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246792}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -34690,8 +34708,8 @@ MonoBehaviour:
   needText: 1
   placeName: The Lake
   displayTime: 3
-  text: {fileID: 0}
-  placeText: {fileID: 0}
+  text: {fileID: 132246790}
+  placeText: {fileID: 132246792}
 --- !u!61 &1291317074
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34969,12 +34987,12 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246790}
     - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: placeText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246792}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
@@ -53378,12 +53396,12 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246790}
     - target: {fileID: 215092709316003816, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: placeText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 132246792}
     - target: {fileID: 215092709316003817, guid: e67081d35c3654a55858d1353a61db54,
         type: 3}
       propertyPath: m_Name
