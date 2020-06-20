@@ -176,7 +176,7 @@ MonoBehaviour:
     type: 3}
   target: {fileID: 0}
   chaseRadius: 4
-  attackRadius: 1.4
+  attackRadius: 0.6
   homePosition: {fileID: 0}
   anim: {fileID: 0}
   myRigidBody: {fileID: 0}
