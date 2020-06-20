@@ -5276,7 +5276,18 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6035464060219650269, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: signalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2112093169}
+    - target: {fileID: 6035464060219650269, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: signalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateCoinCount
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6404896035536898175, guid: a998fb0bc64f44dbea1fbf678cefa23d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a998fb0bc64f44dbea1fbf678cefa23d, type: 3}
 --- !u!1 &1439847244
 GameObject:
@@ -5592,6 +5603,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2112093169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4980387490164148988, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1246281350}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105b2ab4b9ddf460da60fa8c004767d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8484785475875896266
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7131,18 +7131,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67081d35c3654a55858d1353a61db54, type: 3}
---- !u!114 &405677056 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4762800371488471029, guid: a998fb0bc64f44dbea1fbf678cefa23d,
-    type: 3}
-  m_PrefabInstance: {fileID: 448120851}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &448120851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7315,6 +7303,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6035464060219650269, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: signalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1467320760}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a998fb0bc64f44dbea1fbf678cefa23d, type: 3}
 --- !u!1 &448120852 stripped
@@ -35147,53 +35140,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1467320756 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4762800372801101019, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+--- !u!114 &1467320760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4980387490164148988, guid: a998fb0bc64f44dbea1fbf678cefa23d,
     type: 3}
   m_PrefabInstance: {fileID: 448120851}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1467320758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467320756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0b9aa1d04b784cc5b97e1036d772c56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  signal: {fileID: 11400000, guid: 67d8044cd2de947cb95ea53daa513999, type: 2}
-  signalEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1467320760}
-        m_MethodName: UpdateCoinCount
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1467320760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467320756}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 105b2ab4b9ddf460da60fa8c004767d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: 1e2bde16ca07a405393925b69e270ec3, type: 2}
-  coinDisplay: {fileID: 405677056}
 --- !u!1 &1480634921
 GameObject:
   m_ObjectHideFlags: 0
