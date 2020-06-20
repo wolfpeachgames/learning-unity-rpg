@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7528097157446238718}
   - component: {fileID: 7528097157446238717}
   m_Layer: 8
-  m_Name: log1
+  m_Name: Log
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -172,11 +172,14 @@ MonoBehaviour:
   enemyName: Lana the Log
   baseAttack: 1
   moveSpeed: 1.8
+  deathEffect: {fileID: 1615381151688582929, guid: 97c5ebfba94f1483f9dfefae8fc57706,
+    type: 3}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1.4
   homePosition: {fileID: 0}
   anim: {fileID: 0}
+  myRigidBody: {fileID: 0}
 --- !u!61 &7528097157446238718
 BoxCollider2D:
   m_ObjectHideFlags: 0
