@@ -5,10 +5,16 @@ using UnityEngine.UI;
 
 public class Chest : Interactable
 {
+    [Header("Chest Contents")]
     public Item contents;
-    public Inventory playerInventory;
     public bool isOpen;
     public Signal receiveItemSignal;
+    public BoolValue storedOpenState;
+
+    [Header("Player")]
+    public Inventory playerInventory;
+
+    [Header("Feedback")]
     public GameObject dialogBox;
     public Text dialogText;
     private Animator anim;
@@ -18,6 +24,12 @@ public class Chest : Interactable
     void Start()
     {
         anim = GetComponent<Animator>();
+        Debug.Log(storedOpenState.RuntimeValue);
+        isOpen = storedOpenState.RuntimeValue;
+        if (isOpen)
+        {
+            anim.SetBool("opened", true);
+        }
     }
 
 
@@ -54,6 +66,9 @@ public class Chest : Interactable
         // set chest to open
         isOpen = true;
         anim.SetBool("opened", true);
+        storedOpenState.RuntimeValue = true;
+        Debug.Log("opened chest");
+        Debug.Log(storedOpenState.RuntimeValue);
     }
 
 
