@@ -43,7 +43,7 @@ public class Log : Enemy
             ChangeState(EnemyState.WALK);
             anim.SetBool("wakeUp", true);
         }
-        else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
+        else if (ShouldSleep())
         {
             anim.SetBool("wakeUp", false);
         }
@@ -55,6 +55,11 @@ public class Log : Enemy
         float distance = Vector3.Distance(target.position, transform.position);
         bool notBusy = (currentState == EnemyState.IDLE || currentState == EnemyState.WALK) && (currentState != EnemyState.STAGGER);
         return (notBusy && distance <= chaseRadius && distance > attackRadius);
+    }
+
+    public bool ShouldSleep()
+    {
+        return (Vector3.Distance(target.position, transform.position) > chaseRadius);
     }
 
 
@@ -92,7 +97,7 @@ public class Log : Enemy
     }
 
 
-    private void ChangeState(EnemyState newState)
+    public void ChangeState(EnemyState newState)
     {
         if (currentState != newState)
         {
