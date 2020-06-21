@@ -295,10 +295,10 @@ TextureImporter:
     second: objects_96
   - first:
       213: 4391973271103909417
-    second: objects_97
+    second: buttonUp
   - first:
       213: -2639854583086408205
-    second: objects_98
+    second: buttonDown
   - first:
       213: 5955781087917997448
     second: objects_99
@@ -2574,13 +2574,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_97
+      name: buttonUp
       rect:
         serializedVersion: 2
         x: 0
         y: 160
-        width: 14
-        height: 31
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2595,13 +2595,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_98
+      name: buttonDown
       rect:
         serializedVersion: 2
         x: 16
         y: 160
-        width: 14
-        height: 31
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3590,7 +3590,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

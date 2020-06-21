@@ -59,4 +59,9 @@ public class LockedDoor : Interactable
     {
 
     }
+
+    public override void Activate()
+    {
+        Open();
+    }
 }

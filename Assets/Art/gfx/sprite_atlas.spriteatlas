@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 556758
+    totalSpriteSurfaceArea: 556402
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1245,11 +1245,9 @@ SpriteAtlas:
   - {fileID: -2336223751096622429, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: 8531737542734488527, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: -9051748682659619041, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
-  - {fileID: -2639854583086408205, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: 138822527552902627, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: 8694480088762194938, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: -6274607833073127828, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
-  - {fileID: 4391973271103909417, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: -1766389781502433406, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: -8253891713049958405, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: 243028321930452633, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
@@ -1362,9 +1360,11 @@ SpriteAtlas:
   - {fileID: 2487486484330169583, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: -3555468057966329373, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: 8387997009269029421, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
+  - {fileID: -2639854583086408205, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: 5513264443485517607, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: -595281427602211305, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: 4571676322455285884, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
+  - {fileID: 4391973271103909417, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: 538826285080647454, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: 1107736971085435061, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
   - {fileID: -377563455374678323, guid: 16f834d3fdec24829965eab82f56ad78, type: 3}
@@ -2966,11 +2966,9 @@ SpriteAtlas:
   - objects_51
   - objects_69
   - objects_86
-  - objects_98
   - objects_50
   - objects_66
   - objects_87
-  - objects_97
   - objects_57
   - objects_67
   - objects_80
@@ -3083,9 +3081,11 @@ SpriteAtlas:
   - objects_115
   - objects_101
   - objects_100
+  - buttonDown
   - objects_103
   - objects_118
   - objects_102
+  - buttonUp
   - objects_119
   - objects_109
   - objects_108
