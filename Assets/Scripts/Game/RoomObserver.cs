@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Room : MonoBehaviour
+public class RoomObserver : MonoBehaviour
 {
     public Enemy[] enemies;
     public Pot[] breakables;
