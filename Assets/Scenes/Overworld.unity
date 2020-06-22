@@ -13443,7 +13443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2093955201}
-  smoothing: 0.02
+  smoothing: 0.04
   maxPosition: {x: 6, y: 2}
   minPosition: {x: -3, y: -11}
   anim: {fileID: 0}
