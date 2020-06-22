@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
 {
     [Header("State Machine")]
     public EnemyState currentState;
+    public bool hasHome;
+    public Vector2 homePosition;
 
     [Header("Enemy Stats")]
     public FloatValue maxHealth;
@@ -27,6 +29,15 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         health = maxHealth.initialValue;
+    }
+
+
+    private void OnEnable()
+    {
+        if (hasHome)
+        {
+            transform.position = homePosition;
+        }
     }
 
 
