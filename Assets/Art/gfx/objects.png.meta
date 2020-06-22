@@ -76,16 +76,16 @@ TextureImporter:
     second: objects_23
   - first:
       213: 5849325189442884660
-    second: objects_24
+    second: Rock1
   - first:
       213: 8753186556605219898
-    second: objects_25
+    second: Rock2
   - first:
       213: -8841936248928892492
-    second: objects_26
+    second: Rock3
   - first:
       213: 7495320969501026803
-    second: objects_27
+    second: Rock4
   - first:
       213: 2002165265138813586
     second: objects_28
@@ -1041,7 +1041,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_24
+      name: Rock1
       rect:
         serializedVersion: 2
         x: 260
@@ -1062,7 +1062,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_25
+      name: Rock2
       rect:
         serializedVersion: 2
         x: 277
@@ -1083,7 +1083,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_26
+      name: Rock3
       rect:
         serializedVersion: 2
         x: 294
@@ -1104,7 +1104,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_27
+      name: Rock4
       rect:
         serializedVersion: 2
         x: 310

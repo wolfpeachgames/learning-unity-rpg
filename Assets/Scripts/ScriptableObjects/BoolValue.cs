@@ -13,8 +13,6 @@ public class BoolValue : ScriptableObject, ISerializationCallbackReceiver
 
     public void OnBeforeSerialize()
     {
-        Debug.Log("deserializing BoolValue");
-        Debug.Log(initialValue);
         RuntimeValue = initialValue;
     }
 
