@@ -57,7 +57,9 @@ public class LockedDoor : Interactable
 
     public void Close()
     {
-
+        doorSprite.enabled = true;
+        open = false;
+        physicsCollider.enabled = true;
     }
 
     public override void Activate()

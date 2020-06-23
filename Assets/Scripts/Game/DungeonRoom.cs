@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dungeon1Room : RoomObserver
+public class DungeonRoom : RoomObserver
 {
     // Start is called before the first frame update
     void Start()
