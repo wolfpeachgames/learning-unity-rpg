@@ -10,17 +10,10 @@ public class Sign : Interactable
     public string dialog;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
+        if (Input.GetButtonDown("attack") && playerInRange)
         {
             if (dialogBox.activeInHierarchy)
             {

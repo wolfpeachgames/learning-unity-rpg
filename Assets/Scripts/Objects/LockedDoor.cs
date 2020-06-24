@@ -27,7 +27,7 @@ public class LockedDoor : Interactable
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("attack"))
         {
             if (playerInRange && thisDoorType == DoorType.KEY)
             {

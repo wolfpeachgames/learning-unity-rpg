@@ -36,7 +36,7 @@ public class Chest : Interactable
     // Update is called once per frame
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.Space))
+        if (playerInRange && Input.GetButtonDown("attack"))
         {
             if (!isOpen)
             {
