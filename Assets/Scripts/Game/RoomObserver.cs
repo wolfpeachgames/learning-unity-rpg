@@ -9,6 +9,12 @@ public class RoomObserver : MonoBehaviour
     public GameObject virtualCamera;
 
 
+    private void Start()
+    {
+        virtualCamera.SetActive(false);
+    }
+
+
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !other.isTrigger)

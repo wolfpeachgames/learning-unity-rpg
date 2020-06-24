@@ -7,13 +7,6 @@ public class DungeonEnemyRoom : DungeonRoom
     public LockedDoor[] doors;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-
     public void CheckEnemies()
     {
         for (int i = 0; i < enemies.Length; i++)
