@@ -41,6 +41,8 @@ public class Enemy : Lootable
         {
             transform.position = homePosition;
         }
+        health = maxHealth.initialValue;
+        currentState = EnemyState.IDLE; 
     }
 
 
@@ -58,19 +60,6 @@ public class Enemy : Lootable
             this.gameObject.SetActive(false);
         }
     }
-
-
-    //private void MakeLoot()
-    //{
-    //    if (lootTable != null)
-    //    {
-    //        Powerup current = lootTable.LootPowerup();
-    //        if (current != null)
-    //        {
-    //            Instantiate(current.gameObject, transform.position, Quaternion.identity);
-    //        }
-    //    }
-    //}
 
 
     private void DeathEffect()
