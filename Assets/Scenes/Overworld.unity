@@ -499,18 +499,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &113888816 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7528097157446238719, guid: 894ca3338248f457fbccb37518dd00ff,
-    type: 3}
-  m_PrefabInstance: {fileID: 1919356823}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d72e85b006504b5caf552b5ce1d0050, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &113888823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7528097157446238714, guid: 894ca3338248f457fbccb37518dd00ff,
@@ -13373,7 +13361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.49, y: -2.55, z: -10}
+  m_LocalPosition: {x: 5.49, y: -2.5500002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -27663,12 +27651,12 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneWidth: 0.05
+  m_DeadZoneHeight: 0.05
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 2
+  m_SoftZoneHeight: 2
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -28167,8 +28155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cc47635171040869eca79d88132ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 113888816}
+  enemies: []
   breakables:
   - {fileID: 1229916936}
   - {fileID: 762168099}
@@ -45678,7 +45665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615219513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.49, y: -2.55, z: -10}
+  m_LocalPosition: {x: 5.49, y: -2.5500002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 709127362}
@@ -65648,6 +65635,12 @@ PrefabInstance:
       propertyPath: hasHome
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7528097157446238719, guid: 894ca3338248f457fbccb37518dd00ff,
+        type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: c008d678622c44d8cb26d8dbd0d71e01,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 894ca3338248f457fbccb37518dd00ff, type: 3}
 --- !u!1 &1951078079
@@ -65947,6 +65940,7 @@ MonoBehaviour:
   moveSpeed: 2
   deathEffect: {fileID: 0}
   deathSignal: {fileID: 0}
+  lootTable: {fileID: 0}
   myRigidBody: {fileID: 0}
   anim: {fileID: 0}
   target: {fileID: 0}
@@ -66182,6 +66176,7 @@ MonoBehaviour:
   deathEffect: {fileID: 1615381151688582929, guid: 97c5ebfba94f1483f9dfefae8fc57706,
     type: 3}
   deathSignal: {fileID: 0}
+  lootTable: {fileID: 0}
   myRigidBody: {fileID: 1244623299890132303}
   anim: {fileID: 1244623299890132307}
   target: {fileID: 2093955201}

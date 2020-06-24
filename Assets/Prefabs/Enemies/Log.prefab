@@ -167,6 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  hasHome: 0
+  homePosition: {x: 0, y: 0}
   maxHealth: {fileID: 11400000, guid: 3a0f8c312709f45419b6792aabfe82f2, type: 2}
   health: 2
   enemyName: Lana the Log
@@ -174,12 +176,13 @@ MonoBehaviour:
   moveSpeed: 1.8
   deathEffect: {fileID: 1615381151688582929, guid: 97c5ebfba94f1483f9dfefae8fc57706,
     type: 3}
+  deathSignal: {fileID: 0}
+  lootTable: {fileID: 11400000, guid: c008d678622c44d8cb26d8dbd0d71e01, type: 2}
+  myRigidBody: {fileID: 0}
+  anim: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 0.6
-  homePosition: {fileID: 0}
-  anim: {fileID: 0}
-  myRigidBody: {fileID: 0}
 --- !u!61 &7528097157446238718
 BoxCollider2D:
   m_ObjectHideFlags: 0
