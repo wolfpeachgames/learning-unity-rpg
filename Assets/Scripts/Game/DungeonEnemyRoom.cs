@@ -62,6 +62,7 @@ public class DungeonEnemyRoom : DungeonRoom
                 ChangeActivation(breakables[i], true);
             }
             CloseDoors();
+            virtualCamera.SetActive(true);
         }
     }
 

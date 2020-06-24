@@ -6,6 +6,7 @@ public class RoomObserver : MonoBehaviour
 {
     public Enemy[] enemies;
     public Pot[] breakables;
+    public GameObject virtualCamera;
 
 
     public virtual void OnTriggerEnter2D(Collider2D other)
@@ -21,6 +22,7 @@ public class RoomObserver : MonoBehaviour
             {
                 ChangeActivation(breakables[i], true);
             }
+            virtualCamera.SetActive(true);
         }
     }
 
@@ -38,6 +40,7 @@ public class RoomObserver : MonoBehaviour
             {
                 ChangeActivation(breakables[i], false);
             }
+            virtualCamera.SetActive(false);
         }
     }
 
