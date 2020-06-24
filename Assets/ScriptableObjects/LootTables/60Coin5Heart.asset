@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0364694b047c49be9c3110550ce408b, type: 3}
-  m_Name: New Loot Table
+  m_Name: 60Coin5Heart
   m_EditorClassIdentifier: 
   loots:
   - thisLoot: {fileID: 1624836592926768230, guid: 11d68f5a3e51f449a8d1922a72d18405,

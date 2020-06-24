@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0364694b047c49be9c3110550ce408b, type: 3}
-  m_Name: MostlyHearts
+  m_Name: 50Heart25Coin
   m_EditorClassIdentifier: 
   loots:
   - thisLoot: {fileID: 3864463262436492880, guid: 4091a88837df2426294f728ea7258dbc,
