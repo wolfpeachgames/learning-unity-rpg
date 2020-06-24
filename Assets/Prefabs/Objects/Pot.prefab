@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8635157781785488210}
   - component: {fileID: 8635157781785488211}
   m_Layer: 0
-  m_Name: pot1
+  m_Name: Pot
   m_TagString: breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,3 +142,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bebe9ff4fba5c4384b765442ac3edccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lootTable: {fileID: 11400000, guid: 71e7e967488434ab7b1df6cc0adb1dc0, type: 2}

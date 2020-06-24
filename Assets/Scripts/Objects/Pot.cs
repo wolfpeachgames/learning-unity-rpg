@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pot : MonoBehaviour
+public class Pot : Lootable
 {
     private Animator anim;
 
@@ -11,13 +11,6 @@ public class Pot : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
 
@@ -30,6 +23,7 @@ public class Pot : MonoBehaviour
     IEnumerator BreakCo()
     {
         yield return new WaitForSeconds(.3f);
+        MakeLoot();
         this.gameObject.SetActive(false);
     }
 }
