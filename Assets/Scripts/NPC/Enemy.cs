@@ -7,7 +7,7 @@ public enum EnemyState
     IDLE, WALK, ATTACK, STAGGER
 }
 
-public class Enemy : MonoBehaviour
+public class Enemy : Lootable
 {
     [Header("State Machine")]
     public EnemyState currentState;
@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     public GameObject deathEffect;
     private float DEATH_EFFECT_DELAY = 1f;
     public Signal deathSignal;
-    public LootTable lootTable;
+    //public LootTable lootTable;
 
 
     private void Awake()
@@ -60,17 +60,17 @@ public class Enemy : MonoBehaviour
     }
 
 
-    private void MakeLoot()
-    {
-        if (lootTable != null)
-        {
-            Powerup current = lootTable.LootPowerup();
-            if (current != null)
-            {
-                Instantiate(current.gameObject, transform.position, Quaternion.identity);
-            }
-        }
-    }
+    //private void MakeLoot()
+    //{
+    //    if (lootTable != null)
+    //    {
+    //        Powerup current = lootTable.LootPowerup();
+    //        if (current != null)
+    //        {
+    //            Instantiate(current.gameObject, transform.position, Quaternion.identity);
+    //        }
+    //    }
+    //}
 
 
     private void DeathEffect()
