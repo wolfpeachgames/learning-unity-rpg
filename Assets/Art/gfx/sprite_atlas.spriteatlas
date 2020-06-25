@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 556402
+    totalSpriteSurfaceArea: 580978
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1766,6 +1766,38 @@ SpriteAtlas:
   - {fileID: 1532286108747742640, guid: 7471a7c8e641e4f4eaeccfd3b935bfb7, type: 3}
   - {fileID: 147799070741053269, guid: 7471a7c8e641e4f4eaeccfd3b935bfb7, type: 3}
   - {fileID: 21300000, guid: 05f83189a18074033ba84a834dbd6b9a, type: 3}
+  - {fileID: -1898101141213099369, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: 7927429830950459127, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: 1571176116747660993, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: -7336885778912179212, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: -2034084172188926700, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: -437835757249933894, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: -2955828394453855862, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: -4753886741560322309, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: -2338203481565794006, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: -2638942196184380687, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: 8930262238786865639, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: 2094350663154829313, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: -7839383391772302050, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: -7597207668663345718, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: 6119314509959758635, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: 8627847960000431974, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: 9114078935630010517, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: -8799995575176783795, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: -1469879329949605291, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: -7689516855428512398, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: -2413343258722215764, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: 4079024381068309220, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: 1892170638232913272, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: 3417586621162738884, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: 7210269430212126475, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: -4595737047348238561, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: 1660108805471425300, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: -137277378185822715, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: -336000531214846984, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: 1777361459721282548, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: 2670572250263382453, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
+  - {fileID: 5700767193190630657, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: 21300000, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
   m_PackedSpriteNamesToIndex:
   - character_14
@@ -3487,6 +3519,38 @@ SpriteAtlas:
   - modified gfx melee sprites_2
   - modified gfx melee sprites_3
   - key
+  - orge_10
+  - orge_11
+  - orge_12
+  - orge_13
+  - orge_14
+  - orge_15
+  - orge_1
+  - orge_0
+  - orge_3
+  - orge_2
+  - orge_5
+  - orge_4
+  - orge_7
+  - orge_6
+  - orge_9
+  - orge_8
+  - orge attack sprites_9
+  - orge attack sprites_8
+  - orge attack sprites_3
+  - orge attack sprites_2
+  - orge attack sprites_1
+  - orge attack sprites_0
+  - orge attack sprites_7
+  - orge attack sprites_6
+  - orge attack sprites_5
+  - orge attack sprites_4
+  - orge attack sprites_14
+  - orge attack sprites_15
+  - orge attack sprites_12
+  - orge attack sprites_13
+  - orge attack sprites_10
+  - orge attack sprites_11
   - NPC_test
   m_Tag: sprite_atlas
   m_IsVariant: 0

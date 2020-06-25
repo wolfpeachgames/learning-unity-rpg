@@ -204,7 +204,7 @@ Transform:
   m_Children:
   - {fileID: 1770500793}
   m_Father: {fileID: 1297797244}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &13234545 stripped
 MonoBehaviour:
@@ -28002,9 +28002,10 @@ GameObject:
   - component: {fileID: 917998032}
   - component: {fileID: 917998031}
   - component: {fileID: 917998030}
+  - component: {fileID: 917998036}
   m_Layer: 0
-  m_Name: orge_0
-  m_TagString: Untagged
+  m_Name: Ogre
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28045,7 +28046,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -28071,7 +28072,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -28088,7 +28089,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917998029}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -28159,13 +28160,42 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917998029}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 21.645905, y: -7.262969, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1297797244}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &917998036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917998029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266023857264043f9a6fa53887feb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootTable: {fileID: 11400000, guid: c008d678622c44d8cb26d8dbd0d71e01, type: 2}
+  currentState: 0
+  hasHome: 0
+  homePosition: {x: 0, y: 0}
+  maxHealth: {fileID: 11400000, guid: 22bb1f1ad6c7745d189adf31794e856f, type: 2}
+  health: 3
+  enemyName: Ogre1
+  baseAttack: 1
+  moveSpeed: 1
+  deathEffect: {fileID: 1615381151688582929, guid: 97c5ebfba94f1483f9dfefae8fc57706,
+    type: 3}
+  deathSignal: {fileID: 11400000, guid: 52c562272d1ca42c393d567ecdbbedd0, type: 2}
+  myRigidBody: {fileID: 917998033}
+  anim: {fileID: 917998030}
+  target: {fileID: 2093955201}
+  chaseRadius: 5
+  attackRadius: 1
 --- !u!1 &972673603
 GameObject:
   m_ObjectHideFlags: 0
@@ -34565,6 +34595,7 @@ Transform:
   m_Children:
   - {fileID: 1648188658}
   - {fileID: 1897405594}
+  - {fileID: 917998035}
   - {fileID: 11107413}
   m_Father: {fileID: 0}
   m_RootOrder: 3
