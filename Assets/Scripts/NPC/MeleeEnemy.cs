@@ -95,7 +95,7 @@ public class MeleeEnemy : Log
         Debug.Log("ATTACk");
         currentState = EnemyState.ATTACK;
         anim.SetBool("attacking", true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         currentState = EnemyState.IDLE;
         anim.SetBool("attacking", false);
         Debug.Log("not attack");
