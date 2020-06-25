@@ -9,7 +9,6 @@ public class MagicManager : MonoBehaviour
     public Inventory playerInventory;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         magicSlider.maxValue = playerInventory.maxMagic;
@@ -17,31 +16,24 @@ public class MagicManager : MonoBehaviour
         playerInventory.currentMagic = playerInventory.maxMagic;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
     }
 
 
-    public void AddMagic()
+    public void UpdateMagicLevel()
     {
-        magicSlider.value += 1;
-        if (magicSlider.value > magicSlider.maxValue)
+        float level = playerInventory.currentMagic;
+        if (level > magicSlider.maxValue)
         {
-            magicSlider.value = magicSlider.maxValue;
+            level = magicSlider.maxValue;
         }
-        playerInventory.currentMagic = magicSlider.value;
-    }
-
-
-    public void DecreaseMagic()
-    {
-        magicSlider.value -= 1;
-        if (magicSlider.value < 0)
+        else if (level < 0)
         {
-            magicSlider.value = 0;
+            level = 0;
         }
-        playerInventory.currentMagic = magicSlider.value;
+        magicSlider.value = level;
     }
 }

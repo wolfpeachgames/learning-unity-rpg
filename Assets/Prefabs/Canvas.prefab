@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 9050472300650972148}
   - component: {fileID: 2618296554501134667}
   - component: {fileID: 3505119267290357990}
+  - component: {fileID: 9023690234806479030}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: MagicBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,6 +104,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magicSlider: {fileID: 2618296554501134667}
   playerInventory: {fileID: 11400000, guid: 1e2bde16ca07a405393925b69e270ec3, type: 2}
+--- !u!114 &9023690234806479030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599447539023770892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b9aa1d04b784cc5b97e1036d772c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: 4bf9a21c4fd0a487a8b86fcdc7817653, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3505119267290357990}
+        m_MethodName: UpdateMagicLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2020297558686509631
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +312,7 @@ GameObject:
   - component: {fileID: 1618567869203031734}
   - component: {fileID: 4279403797133076334}
   m_Layer: 5
-  m_Name: Health Frame
+  m_Name: StatsFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

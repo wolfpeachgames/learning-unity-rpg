@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class MagicPowerup : Powerup
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Magic PowerUp")]
+    public float amountOfMagic;
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            playerInventory.ReceiveMagic(amountOfMagic);
             powerupSignal.Raise();
             Destroy(this.gameObject);
         }

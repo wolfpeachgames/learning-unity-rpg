@@ -136,4 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8417284e07ab74df4a29978f33acde3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupSignal: {fileID: 11400000, guid: 1b206c5d47e4a431b9a7f998905cee3c, type: 2}
+  powerupSignal: {fileID: 11400000, guid: 4bf9a21c4fd0a487a8b86fcdc7817653, type: 2}
+  playerInventory: {fileID: 11400000, guid: 1e2bde16ca07a405393925b69e270ec3, type: 2}
+  amountOfMagic: 2

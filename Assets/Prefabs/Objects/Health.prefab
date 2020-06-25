@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerupSignal: {fileID: 11400000, guid: bcf8619ff85af48e5bafa7afdb5793b3, type: 2}
+  playerInventory: {fileID: 11400000, guid: 1e2bde16ca07a405393925b69e270ec3, type: 2}
   playerHealth: {fileID: 11400000, guid: f459d515a88f34409a0618e5f00a88d7, type: 2}
   amountToIncrease: 2
   heartContainers: {fileID: 11400000, guid: 771c64ecddac1439bb4eaf1e88b91f8a, type: 2}

@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public PlayerState currentState;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
-    public Signal playerMagicSignal;
+    public Signal updatePlayerMagicSignal;
 
     [Header("Inventory")]
     public Inventory playerInventory;
@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
     public GameObject projectile;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         currentState = PlayerState.WALK;
@@ -43,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     void Update()
     {
         // is the player in an interaction?
@@ -104,10 +102,24 @@ public class PlayerMovement : MonoBehaviour
     {
         if (playerInventory.currentMagic > 0)
         {
-            playerMagicSignal.Raise();
+            // create new arrow
             Vector2 temp = new Vector2(anim.GetFloat("moveX"), anim.GetFloat("moveY"));
             Arrow arrow = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
-            arrow.Setup(temp, ChooseArrowDirection());
+
+            if (playerInventory.currentMagic >= arrow.magicCost)
+            {
+                // consume magic cost of arrow
+                playerInventory.ConsumeMagic(arrow.magicCost);
+                updatePlayerMagicSignal.Raise();
+                // send arrow on its way
+                arrow.Setup(temp, ChooseArrowDirection());
+            }
+            else
+            {
+                // not enough magic for this arrow, discard
+                Destroy(arrow.gameObject);
+            }
+            
         }
         
     }

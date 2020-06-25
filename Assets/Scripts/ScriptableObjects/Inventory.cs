@@ -8,11 +8,31 @@ public class Inventory : ScriptableObject
     [Header("Items")]
     public Item currentItem;
     public List<Item> items = new List<Item>();
+
+    [Header("Consumables")]
     public int numberOfKeys = 0;
     public int coins = 0;
-    [Header("Other")]
     public float maxMagic = 10;
     public float currentMagic = 0;
+
+
+    private void OnEnable()
+    {
+        currentMagic = maxMagic;
+    }
+
+
+    public void ConsumeMagic(float amount)
+    {
+        // TODO: should you test here if you have enough magic?
+        currentMagic -= amount;
+    }
+
+
+    public void ReceiveMagic(float amount)
+    {
+        currentMagic += amount;
+    }
 
 
     public void AddItem(Item itemToAdd)

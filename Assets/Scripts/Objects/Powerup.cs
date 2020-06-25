@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class Powerup : MonoBehaviour
 {
+    [Header("PowerUp")]
     public Signal powerupSignal;
+    public Inventory playerInventory;
 }

@@ -4,19 +4,9 @@ using UnityEngine;
 
 public class Coin : Powerup
 {
-    public Inventory playerInventory;
-
-
-    // Start is called before the first frame update
     void Start()
     {
         powerupSignal.Raise();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
 

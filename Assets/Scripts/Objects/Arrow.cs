@@ -4,14 +4,29 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
+    [Header("Magic Cost")]
+    public float magicCost;
+    [Header("Physics")]
     public float speed;
     public Rigidbody2D myRigidbody;
+    [Header("Lifecycle")]
+    public float lifetime;
+    private float lifetimeRemaining;
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        lifetimeRemaining = lifetime;
+    }
+
+
+    private void Update()
+    {
+        lifetimeRemaining -= Time.deltaTime;
+        if (lifetimeRemaining <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 
