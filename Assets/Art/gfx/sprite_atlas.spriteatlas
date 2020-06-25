@@ -43,10 +43,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 581490
+    totalSpriteSurfaceArea: 582002
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: a5e24e21dc51c4229aed7d54ab4058de, type: 3}
   - {fileID: -790699523677361007, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
   - {fileID: 8470420716495695676, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
   - {fileID: 6167071470516247665, guid: f9712672d5ea34abb952e82d126f41b3, type: 3}
@@ -1801,7 +1802,9 @@ SpriteAtlas:
   - {fileID: 5700767193190630657, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: 21300000, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
   - {fileID: 21300000, guid: 5b7407bea1ef544a5a418c2e3cc3fa9d, type: 3}
+  - {fileID: 21300000, guid: 8302cb5ffedd94d6a8d968ead0351c72, type: 3}
   m_PackedSpriteNamesToIndex:
+  - magic bottle
   - character_14
   - character_15
   - character_16
@@ -3556,5 +3559,6 @@ SpriteAtlas:
   - orge attack sprites_11
   - NPC_test
   - arrow
+  - magic bar
   m_Tag: sprite_atlas
   m_IsVariant: 0

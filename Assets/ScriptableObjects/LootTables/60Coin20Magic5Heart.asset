@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0364694b047c49be9c3110550ce408b, type: 3}
-  m_Name: 60Coin5Heart
+  m_Name: 60Coin20Magic5Heart
   m_EditorClassIdentifier: 
   loots:
   - thisLoot: {fileID: 1624836592926768230, guid: 11d68f5a3e51f449a8d1922a72d18405,
@@ -19,3 +19,6 @@ MonoBehaviour:
   - thisLoot: {fileID: 3864463262436492880, guid: 4091a88837df2426294f728ea7258dbc,
       type: 3}
     lootChance: 5
+  - thisLoot: {fileID: 8126388216907122658, guid: 189167e72fd2e48f387d0e5b6c024928,
+      type: 3}
+    lootChance: 20

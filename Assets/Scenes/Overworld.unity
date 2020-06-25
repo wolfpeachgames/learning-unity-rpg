@@ -27736,6 +27736,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &859504879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 599447539023770892, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1977093895504990547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &859504881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859504879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b9aa1d04b784cc5b97e1036d772c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: 9d4aadb1352544539bf0b57c5910de09, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 859504882}
+        m_MethodName: DecreaseMagic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &859504882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3505119267290357990, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1977093895504990547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859504879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883587d61d60746e69de6f03a19a6736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &859504883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859504879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b9aa1d04b784cc5b97e1036d772c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: 1b206c5d47e4a431b9a7f998905cee3c, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 859504882}
+        m_MethodName: AddMagic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &863013682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65980,6 +66052,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102720907083566789, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102720907083566789, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 599447539023770892, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: m_Name
+      value: MagicBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133799319880031747, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: m_Name
+      value: StatsFrame
+      objectReference: {fileID: 0}
     - target: {fileID: 6442629992652408961, guid: a998fb0bc64f44dbea1fbf678cefa23d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66089,6 +66181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756152005494025617, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a998fb0bc64f44dbea1fbf678cefa23d, type: 3}
@@ -66323,6 +66420,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7483680078509533322, guid: 71870e8898355435194f964d7e79bd7b,
         type: 3}
+    - target: {fileID: 6689914522971268628, guid: 9bb93ee46a5ee489bba2db0293770aa1,
+        type: 3}
+      propertyPath: playerMagicSignal
+      value: 
+      objectReference: {fileID: 11400000, guid: 9d4aadb1352544539bf0b57c5910de09,
+        type: 2}
     - target: {fileID: 6689914522971268629, guid: 9bb93ee46a5ee489bba2db0293770aa1,
         type: 3}
       propertyPath: m_Enabled
@@ -66469,6 +66572,86 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 894ca3338248f457fbccb37518dd00ff, type: 3}
+--- !u!1001 &8126388217526395786
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.559
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122657, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122658, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: powerupSignal
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b206c5d47e4a431b9a7f998905cee3c,
+        type: 2}
+    - target: {fileID: 8126388216907122659, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126388216907122669, guid: 189167e72fd2e48f387d0e5b6c024928,
+        type: 3}
+      propertyPath: m_Name
+      value: MagicBottle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 189167e72fd2e48f387d0e5b6c024928, type: 3}
 --- !u!1001 &8635157780858740827
 PrefabInstance:
   m_ObjectHideFlags: 0
