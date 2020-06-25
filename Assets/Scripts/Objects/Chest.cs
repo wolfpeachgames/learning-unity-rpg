@@ -24,7 +24,6 @@ public class Chest : Interactable
     void Start()
     {
         anim = GetComponent<Animator>();
-        Debug.Log(storedOpenState.RuntimeValue);
         isOpen = storedOpenState.RuntimeValue;
         if (isOpen)
         {
@@ -62,13 +61,10 @@ public class Chest : Interactable
         // raise signal to player to animate
         receiveItemSignal.Raise();
         //// raise the context clue
-        //contextClueSignal.Raise();
         // set chest to open
         isOpen = true;
         anim.SetBool("opened", true);
         storedOpenState.RuntimeValue = true;
-        Debug.Log("opened chest");
-        Debug.Log(storedOpenState.RuntimeValue);
     }
 
 

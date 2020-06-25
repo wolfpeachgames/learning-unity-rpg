@@ -16,7 +16,6 @@ public class Projectile : MonoBehaviour
     public Rigidbody2D myRigidbody;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -24,7 +23,6 @@ public class Projectile : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     void Update()
     {
         lifetimeRemaining -= Time.deltaTime;
@@ -37,7 +35,6 @@ public class Projectile : MonoBehaviour
 
     public void Launch(Vector2 initialVelocity)
     {
-        Debug.Log("Firing");
         myRigidbody.velocity = initialVelocity * speed;
     }
 
