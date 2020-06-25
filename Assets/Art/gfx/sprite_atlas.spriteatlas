@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 580978
+    totalSpriteSurfaceArea: 581490
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1782,6 +1782,7 @@ SpriteAtlas:
   - {fileID: -7597207668663345718, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
   - {fileID: 6119314509959758635, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
   - {fileID: 8627847960000431974, guid: 7accae1ab72074fb48f560b5e001b864, type: 3}
+  - {fileID: 21300000, guid: 57f2ce9a932004cdd91296da51db53b4, type: 3}
   - {fileID: 9114078935630010517, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: -8799995575176783795, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: -1469879329949605291, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
@@ -1799,6 +1800,7 @@ SpriteAtlas:
   - {fileID: 2670572250263382453, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: 5700767193190630657, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: 21300000, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: 21300000, guid: 5b7407bea1ef544a5a418c2e3cc3fa9d, type: 3}
   m_PackedSpriteNamesToIndex:
   - character_14
   - character_15
@@ -3535,6 +3537,7 @@ SpriteAtlas:
   - orge_6
   - orge_9
   - orge_8
+  - bow
   - orge attack sprites_9
   - orge attack sprites_8
   - orge attack sprites_3
@@ -3552,5 +3555,6 @@ SpriteAtlas:
   - orge attack sprites_10
   - orge attack sprites_11
   - NPC_test
+  - arrow
   m_Tag: sprite_atlas
   m_IsVariant: 0

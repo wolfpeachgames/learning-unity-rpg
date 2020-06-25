@@ -9,26 +9,34 @@ public enum PlayerState
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement")]
     public float speed;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
-    private Animator animator;
+    private Animator anim;
+    public VectorValue startingPosition;
+
+    [Header("State and Health")]
     public PlayerState currentState;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
-    public VectorValue startingPosition;
+
+    [Header("Inventory")]
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
+
+    [Header("Attacking")]
     public Signal playerHitSignal;
+    public GameObject projectile;
 
 
     // Start is called before the first frame update
     void Start()
     {
         currentState = PlayerState.WALK;
-        animator = GetComponent<Animator>();
-        animator.SetFloat("moveX", 0);
-        animator.SetFloat("moveY", -1f);
+        anim = GetComponent<Animator>();
+        anim.SetFloat("moveX", 0);
+        anim.SetFloat("moveY", -1f);
         myRigidbody = GetComponent<Rigidbody2D>();
         transform.position = startingPosition.initialValue;
     }
@@ -51,6 +59,10 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(AttackCo());
         }
+        else if (Input.GetButtonDown("Second Attack") && currentState != PlayerState.ATTACK && currentState != PlayerState.STAGGER)
+        {
+            StartCoroutine(SecondAttackCo());
+        }
         else if (currentState == PlayerState.WALK || currentState == PlayerState.IDLE)
         {
             UpdateAnimationAndMove();
@@ -60,15 +72,45 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator AttackCo()
     {
-        animator.SetBool("attacking", true);
+        anim.SetBool("attacking", true);
         currentState = PlayerState.ATTACK;
         yield return null;
-        animator.SetBool("attacking", false);
+        anim.SetBool("attacking", false);
         yield return new WaitForSeconds(.23f);
         if (currentState != PlayerState.INTERACT)
         {
             currentState = PlayerState.WALK;
         }
+    }
+
+
+    private IEnumerator SecondAttackCo()
+    {
+        //animator.SetBool("attacking", true);
+        currentState = PlayerState.ATTACK;
+        yield return null;
+        MakeArrow();
+        //animator.SetBool("attacking", false);
+        yield return new WaitForSeconds(.23f);
+        if (currentState != PlayerState.INTERACT)
+        {
+            currentState = PlayerState.WALK;
+        }
+    }
+
+
+    private void MakeArrow()
+    {
+        Vector2 temp = new Vector2(anim.GetFloat("moveX"), anim.GetFloat("moveY"));
+        Arrow arrow = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
+        arrow.Setup(temp, ChooseArrowDirection());
+    }
+
+
+    Vector3 ChooseArrowDirection()
+    {
+        float temp = Mathf.Atan2(anim.GetFloat("moveY"), anim.GetFloat("moveX")) * Mathf.Rad2Deg;
+        return new Vector3(0, 0, temp);
     }
 
 
@@ -79,12 +121,12 @@ public class PlayerMovement : MonoBehaviour
             if (currentState != PlayerState.INTERACT)
             {
                 currentState = PlayerState.INTERACT;
-                animator.SetBool("receiveItem", true);
+                anim.SetBool("receiveItem", true);
                 receivedItemSprite.sprite = playerInventory.currentItem.itemSprite;
             }
             else
             {
-                animator.SetBool("receiveItem", false);
+                anim.SetBool("receiveItem", false);
                 currentState = PlayerState.IDLE;
                 receivedItemSprite.sprite = null;
                 playerInventory.currentItem = null;
@@ -98,13 +140,13 @@ public class PlayerMovement : MonoBehaviour
         if (change != Vector3.zero)
         {
             MoveCharacter();
-            animator.SetFloat("moveX", change.x);
-            animator.SetFloat("moveY", change.y);
-            animator.SetBool("moving", true);
+            anim.SetFloat("moveX", change.x);
+            anim.SetFloat("moveY", change.y);
+            anim.SetBool("moving", true);
         }
         else
         {
-            animator.SetBool("moving", false);
+            anim.SetBool("moving", false);
         }
     }
 
