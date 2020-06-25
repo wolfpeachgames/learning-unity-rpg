@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Inventory")]
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
+    public Item bow;
 
     [Header("Attacking")]
     public Signal playerHitSignal;
@@ -60,7 +61,10 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (Input.GetButtonDown("Second Attack") && currentState != PlayerState.ATTACK && currentState != PlayerState.STAGGER)
         {
-            StartCoroutine(SecondAttackCo());
+            if (playerInventory.CheckForItem(bow)) // only allow firing arrows if player has the bow item
+            {
+                StartCoroutine(SecondAttackCo());
+            }
         }
         else if (currentState == PlayerState.WALK || currentState == PlayerState.IDLE)
         {

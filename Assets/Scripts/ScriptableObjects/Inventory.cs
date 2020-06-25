@@ -51,4 +51,10 @@ public class Inventory : ScriptableObject
             }
         }
     }
+
+
+    public bool CheckForItem(Item item)
+    {
+        return items.Contains(item);
+    }
 }

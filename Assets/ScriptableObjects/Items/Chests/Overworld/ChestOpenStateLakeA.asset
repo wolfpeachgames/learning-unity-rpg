@@ -9,13 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58dab2570a22c409db0a0404f96881da, type: 3}
-  m_Name: PlayerInventory
+  m_Script: {fileID: 11500000, guid: bc0e69d6e28544034a6ca3a54dccdaa4, type: 3}
+  m_Name: ChestOpenStateLakeA
   m_EditorClassIdentifier: 
-  currentItem: {fileID: 0}
-  items:
-  - {fileID: 11400000, guid: 9113b470b3e33401bbc5c0bf135f271c, type: 2}
-  numberOfKeys: 4
-  coins: 7
-  maxMagic: 10
-  currentMagic: 3
+  initialValue: 0
+  RuntimeValue: 0
