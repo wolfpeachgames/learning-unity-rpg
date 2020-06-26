@@ -66798,6 +66798,12 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2093955201}
+    - target: {fileID: 8993797996751166559, guid: 3465e0c298a5344b9a12b09c54112a64,
+        type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: f8738bcd75c364c3684d103de0beefc6,
+        type: 2}
     - target: {fileID: 8993797996818809835, guid: 3465e0c298a5344b9a12b09c54112a64,
         type: 3}
       propertyPath: m_Layer
