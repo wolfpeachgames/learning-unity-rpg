@@ -307,16 +307,16 @@ TextureImporter:
     second: objects_100
   - first:
       213: -3555468057966329373
-    second: objects_101
+    second: heartContainer1
   - first:
       213: 4571676322455285884
-    second: objects_102
+    second: heartContainer2
   - first:
       213: 5513264443485517607
-    second: objects_103
+    second: heartContainer3
   - first:
       213: 1529650774630179173
-    second: objects_104
+    second: heartContainer4
   - first:
       213: 3260465681249809347
     second: objects_105
@@ -2658,13 +2658,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_101
+      name: heartContainer1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 177
-        width: 12
-        height: 12
+        x: 64
+        y: 175
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2679,13 +2679,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_102
+      name: heartContainer2
       rect:
         serializedVersion: 2
-        x: 83
-        y: 177
-        width: 11
-        height: 12
+        x: 80
+        y: 175
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2700,15 +2700,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_103
+      name: heartContainer3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 177
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 97
+        y: 175
+        width: 15
+        height: 16
+      alignment: 9
+      pivot: {x: 0.47339883, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2721,13 +2721,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_104
+      name: heartContainer4
       rect:
         serializedVersion: 2
-        x: 115
-        y: 177
-        width: 11
-        height: 12
+        x: 112
+        y: 175
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
