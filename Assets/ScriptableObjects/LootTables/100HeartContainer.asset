@@ -15,4 +15,4 @@ MonoBehaviour:
   loots:
   - thisLoot: {fileID: 6404696212797887201, guid: ce6e090762db2463fb5b121dcc68ffcd,
       type: 3}
-    lootChance: 100
+    lootChance: 99
