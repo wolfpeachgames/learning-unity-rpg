@@ -661,12 +661,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 14
+  startingPosition: {fileID: 11400000, guid: a75e48eaf0f7549c3874438239e4d688, type: 2}
   currentState: 0
   currentHealth: {fileID: 11400000, guid: f459d515a88f34409a0618e5f00a88d7, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: bcf8619ff85af48e5bafa7afdb5793b3, type: 2}
-  startingPosition: {fileID: 11400000, guid: a75e48eaf0f7549c3874438239e4d688, type: 2}
+  updatePlayerMagicSignal: {fileID: 11400000, guid: 4bf9a21c4fd0a487a8b86fcdc7817653,
+    type: 2}
   playerInventory: {fileID: 11400000, guid: 1e2bde16ca07a405393925b69e270ec3, type: 2}
   receivedItemSprite: {fileID: 6689914522734157425}
+  bow: {fileID: 0}
+  playerHitSignal: {fileID: 0}
+  projectile: {fileID: 7483680078509533322, guid: 71870e8898355435194f964d7e79bd7b,
+    type: 3}
 --- !u!1 &6689914523197802650
 GameObject:
   m_ObjectHideFlags: 0
