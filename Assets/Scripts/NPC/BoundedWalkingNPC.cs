@@ -90,4 +90,5 @@ public class BoundedWalkingNPC : Interactable
             ChangeDirection();
         }
     }
+
 }

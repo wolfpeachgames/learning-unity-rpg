@@ -47084,6 +47084,12 @@ Transform:
   m_Father: {fileID: 905314674}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1628457188 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7129569148249129448, guid: db6db304da8c64bca89e109f40acbc11,
+    type: 3}
+  m_PrefabInstance: {fileID: 7129569147727972620}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1642116848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70622,6 +70628,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1297797244}
     m_Modifications:
+    - target: {fileID: 7129569148249129448, guid: db6db304da8c64bca89e109f40acbc11,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.27665073
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129569148249129448, guid: db6db304da8c64bca89e109f40acbc11,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.48239493
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129569148249129448, guid: db6db304da8c64bca89e109f40acbc11,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.04087162
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129569148249129448, guid: db6db304da8c64bca89e109f40acbc11,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.8156769
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129569148582239351, guid: db6db304da8c64bca89e109f40acbc11,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129569148582239351, guid: db6db304da8c64bca89e109f40acbc11,
+        type: 3}
+      propertyPath: bounds
+      value: 
+      objectReference: {fileID: 1628457188}
+    - target: {fileID: 7129569148582239354, guid: db6db304da8c64bca89e109f40acbc11,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7129569149266958448, guid: db6db304da8c64bca89e109f40acbc11,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -70682,7 +70723,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCHolder
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7129569148249129449, guid: db6db304da8c64bca89e109f40acbc11, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db6db304da8c64bca89e109f40acbc11, type: 3}
 --- !u!1001 &7528097157571061611
 PrefabInstance:
