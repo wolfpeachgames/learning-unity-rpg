@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 666081
+    totalSpriteSurfaceArea: 666097
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1835,8 +1835,24 @@ SpriteAtlas:
   - {fileID: 1777361459721282548, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: 2670572250263382453, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: 5700767193190630657, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
-  - {fileID: 21300000, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -1790513009360131488, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: 6796940128468367395, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: 7257679221847934946, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -8018767669905319889, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: 3471414262902695032, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -5174125284999604879, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: 4411923371137299535, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -7544729849536096197, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: 109808345321430783, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -984706229473049029, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -2757298984738394219, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -3297999012176952179, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -6431366237039918707, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -8922353081226294202, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: 8869442856293547957, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
+  - {fileID: -1466947835845212873, guid: 2ab6056c0d0a4463e8b96589d08cb6b0, type: 3}
   - {fileID: 21300000, guid: 5b7407bea1ef544a5a418c2e3cc3fa9d, type: 3}
+  - {fileID: 21300000, guid: c7a4681fd25144c7badd9855973f17e8, type: 3}
   - {fileID: 21300000, guid: 8302cb5ffedd94d6a8d968ead0351c72, type: 3}
   m_PackedSpriteNamesToIndex:
   - magic bottle
@@ -3627,8 +3643,24 @@ SpriteAtlas:
   - orge attack sprites_13
   - orge attack sprites_10
   - orge attack sprites_11
-  - NPC_test
+  - NPC_test_11
+  - NPC_test_10
+  - NPC_test_13
+  - NPC_test_12
+  - NPC_test_6
+  - NPC_test_7
+  - NPC_test_4
+  - NPC_test_5
+  - NPC_test_2
+  - NPC_test_3
+  - NPC_test_0
+  - NPC_test_1
+  - NPC_test_8
+  - NPC_test_9
+  - NPC_test_15
+  - NPC_test_14
   - arrow
+  - Square
   - magic bar
   m_Tag: sprite_atlas
   m_IsVariant: 0
