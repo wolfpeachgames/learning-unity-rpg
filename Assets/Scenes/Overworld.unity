@@ -70036,12 +70036,12 @@ PrefabInstance:
     - target: {fileID: 102720907083566789, guid: a998fb0bc64f44dbea1fbf678cefa23d,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 102720907083566789, guid: a998fb0bc64f44dbea1fbf678cefa23d,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 599447539023770892, guid: a998fb0bc64f44dbea1fbf678cefa23d,
         type: 3}
@@ -70052,6 +70052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StatsFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582967442694223662, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6442629992652408961, guid: a998fb0bc64f44dbea1fbf678cefa23d,
         type: 3}
@@ -70176,7 +70181,7 @@ PrefabInstance:
     - target: {fileID: 6776147938929088945, guid: a998fb0bc64f44dbea1fbf678cefa23d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7756152005494025617, guid: a998fb0bc64f44dbea1fbf678cefa23d,
         type: 3}
@@ -70696,6 +70701,16 @@ PrefabInstance:
       propertyPath: bounds
       value: 
       objectReference: {fileID: 1628457188}
+    - target: {fileID: 7129569148582239351, guid: db6db304da8c64bca89e109f40acbc11,
+        type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 6199947209618171517}
+    - target: {fileID: 7129569148582239351, guid: db6db304da8c64bca89e109f40acbc11,
+        type: 3}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 5230187557799864738}
     - target: {fileID: 7129569148582239354, guid: db6db304da8c64bca89e109f40acbc11,
         type: 3}
       propertyPath: m_Layer

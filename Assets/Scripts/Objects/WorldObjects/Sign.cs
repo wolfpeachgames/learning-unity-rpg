@@ -10,11 +10,11 @@ public class Sign : Interactable
     public string dialog;
 
 
-    // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         if (Input.GetButtonDown("attack") && playerInRange)
         {
+            Debug.Log("hello");
             if (dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);

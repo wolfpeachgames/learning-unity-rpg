@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoundedWalkingNPC : Interactable
+public class BoundedWalkingNPC : Sign
 {
     [Header("Movement")]
     public float speed;
@@ -32,8 +32,9 @@ public class BoundedWalkingNPC : Interactable
     }
 
 
-    void Update()
+    public override void Update()
     {
+        base.Update();
         if (isMoving)
         {
             moveTimeRemaining -= Time.deltaTime;

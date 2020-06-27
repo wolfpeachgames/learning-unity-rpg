@@ -249,6 +249,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInRange: 0
   contextClueSignal: {fileID: 11400000, guid: a6c7fa54c9a8c4ed2a813eae1d780596, type: 2}
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
+  dialog: I saw your Raccoon go into that cave across the river.
   speed: 3
   moveTime: 3
   waitTime: 1
