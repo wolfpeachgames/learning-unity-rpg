@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 666202
+    totalSpriteSurfaceArea: 662938
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1806,6 +1806,11 @@ SpriteAtlas:
   - {fileID: 8040228590554202794, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -6150987227563095800, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 2068853671649594638, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: 4737032247662142196, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: 7486176027463132658, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: -9191195199893383973, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: 1041883242003007101, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: 773574341357259945, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -6238502309899954150, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 7927476308975435469, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -2260877009132359356, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
@@ -1822,7 +1827,6 @@ SpriteAtlas:
   - {fileID: -2342301492701525903, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 980956055398311460, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 7387412171964800305, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
-  - {fileID: 4737032247662142196, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 679772057453472605, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 7139880109119449422, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -8475413816202481391, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
@@ -3627,6 +3631,11 @@ SpriteAtlas:
   - OverworldSprites_10
   - OverworldSprites_13
   - OverworldSprites_12
+  - flagWaving1
+  - flagWaving3
+  - flagWaving2
+  - flagWaving5
+  - flagWaving4
   - shopStall
   - shop1Bottle
   - OverworldSprites_24
@@ -3643,7 +3652,6 @@ SpriteAtlas:
   - OverworldSprites_7
   - OverworldSprites_32
   - OverworldSprites_4
-  - OverworldSprites_31
   - OverworldSprites_5
   - OverworldSprites_30
   - crateYellowFruit2
