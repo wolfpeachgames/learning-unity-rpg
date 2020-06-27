@@ -756,6 +756,12 @@ MonoBehaviour:
   playerHitSignal: {fileID: 0}
   projectile: {fileID: 7483680078509533322, guid: 71870e8898355435194f964d7e79bd7b,
     type: 3}
+  flashColor: {r: 1, g: 0.2971698, b: 0.2971698, a: 0.5372549}
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
+  flashDuration: 0.1
+  numberOfFlashes: 4
+  myTriggerCollider: {fileID: 6689914522971268627}
+  mySprite: {fileID: 6689914522971268630}
 --- !u!1 &6689914523197802650
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
-    private Animator anim;
+    private Animator myAnimator;
     public VectorValue startingPosition;
 
     [Header("State and Health")]
@@ -31,13 +31,21 @@ public class PlayerMovement : MonoBehaviour
     public Signal playerHitSignal;
     public GameObject projectile;
 
+    [Header("Invulnerability Frames")]
+    public Color flashColor;
+    public Color regularColor;
+    public float flashDuration;
+    public int numberOfFlashes;
+    public Collider2D myTriggerCollider;
+    public SpriteRenderer mySprite;
+
 
     void Start()
     {
         currentState = PlayerState.WALK;
-        anim = GetComponent<Animator>();
-        anim.SetFloat("moveX", 0);
-        anim.SetFloat("moveY", -1f);
+        myAnimator = GetComponent<Animator>();
+        myAnimator.SetFloat("moveX", 0);
+        myAnimator.SetFloat("moveY", -1f);
         myRigidbody = GetComponent<Rigidbody2D>();
         transform.position = startingPosition.initialValue;
     }
@@ -75,10 +83,10 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator AttackCo()
     {
-        anim.SetBool("attacking", true);
+        myAnimator.SetBool("attacking", true);
         currentState = PlayerState.ATTACK;
         yield return null;
-        anim.SetBool("attacking", false);
+        myAnimator.SetBool("attacking", false);
         yield return new WaitForSeconds(.23f);
         if (currentState != PlayerState.INTERACT)
         {
@@ -107,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerInventory.currentMagic > 0)
         {
             // create new arrow
-            Vector2 temp = new Vector2(anim.GetFloat("moveX"), anim.GetFloat("moveY"));
+            Vector2 temp = new Vector2(myAnimator.GetFloat("moveX"), myAnimator.GetFloat("moveY"));
             Arrow arrow = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
 
             if (playerInventory.currentMagic >= arrow.magicCost)
@@ -131,7 +139,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 ChooseArrowDirection()
     {
-        float temp = Mathf.Atan2(anim.GetFloat("moveY"), anim.GetFloat("moveX")) * Mathf.Rad2Deg;
+        float temp = Mathf.Atan2(myAnimator.GetFloat("moveY"), myAnimator.GetFloat("moveX")) * Mathf.Rad2Deg;
         return new Vector3(0, 0, temp);
     }
 
@@ -143,12 +151,12 @@ public class PlayerMovement : MonoBehaviour
             if (currentState != PlayerState.INTERACT)
             {
                 currentState = PlayerState.INTERACT;
-                anim.SetBool("receiveItem", true);
+                myAnimator.SetBool("receiveItem", true);
                 receivedItemSprite.sprite = playerInventory.currentItem.itemSprite;
             }
             else
             {
-                anim.SetBool("receiveItem", false);
+                myAnimator.SetBool("receiveItem", false);
                 currentState = PlayerState.IDLE;
                 receivedItemSprite.sprite = null;
                 playerInventory.currentItem = null;
@@ -164,13 +172,13 @@ public class PlayerMovement : MonoBehaviour
             MoveCharacter();
             change.x = Mathf.Round(change.x);
             change.y = Mathf.Round(change.y);
-            anim.SetFloat("moveX", change.x);
-            anim.SetFloat("moveY", change.y);
-            anim.SetBool("moving", true);
+            myAnimator.SetFloat("moveX", change.x);
+            myAnimator.SetFloat("moveY", change.y);
+            myAnimator.SetBool("moving", true);
         }
         else
         {
-            anim.SetBool("moving", false);
+            myAnimator.SetBool("moving", false);
         }
     }
 
@@ -205,9 +213,26 @@ public class PlayerMovement : MonoBehaviour
         playerHitSignal.Raise();
         if (myRigidbody != null)
         {
+            StartCoroutine(FlashCo());
             yield return new WaitForSeconds(knockTime);
             myRigidbody.velocity = Vector2.zero;
             currentState = PlayerState.IDLE;
         }
+    }
+
+
+    private IEnumerator FlashCo()
+    {
+        int processedFlashes = 0;
+        myTriggerCollider.enabled = false;
+        while (processedFlashes < numberOfFlashes)
+        {
+            mySprite.color = flashColor;
+            yield return new WaitForSeconds(flashDuration);
+            mySprite.color = regularColor;
+            yield return new WaitForSeconds(flashDuration);
+            processedFlashes++;
+        }
+        myTriggerCollider.enabled = true;
     }
 }
