@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 670705
+    totalSpriteSurfaceArea: 666202
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1790,6 +1790,13 @@ SpriteAtlas:
   - {fileID: -6508348331177680151, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -87491710819773190, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -2875160064764800033, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: -4650871433539430871, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: 1070749202821520984, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: 6635480760284725468, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: 1480783939824099449, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: 950987087364557093, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: -4698855453461968906, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: -2809081604702378178, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -3034867720534637284, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -4799462639273816942, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -8803856390816433032, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
@@ -1799,6 +1806,8 @@ SpriteAtlas:
   - {fileID: 8040228590554202794, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -6150987227563095800, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 2068853671649594638, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: -6238502309899954150, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: 7927476308975435469, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -2260877009132359356, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 7083634739744382427, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -8907488419728900079, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
@@ -1816,9 +1825,9 @@ SpriteAtlas:
   - {fileID: 4737032247662142196, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 679772057453472605, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 7139880109119449422, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
+  - {fileID: -8475413816202481391, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 5020304099010615944, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -1927694147956309886, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
-  - {fileID: -8475413816202481391, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 5332884174719236704, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: -5668889886972282669, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 21300000, guid: 57f2ce9a932004cdd91296da51db53b4, type: 3}
@@ -3602,6 +3611,13 @@ SpriteAtlas:
   - fountain1
   - fountain3
   - fountain2
+  - shopYellowFruit
+  - shop3Bottles
+  - crateGreenFruit
+  - shopSac
+  - crateRedFruit
+  - crateYellowFruit
+  - shopRedFruit
   - OverworldSprites_19
   - OverworldSprites_15
   - OverworldSprites_14
@@ -3611,6 +3627,8 @@ SpriteAtlas:
   - OverworldSprites_10
   - OverworldSprites_13
   - OverworldSprites_12
+  - shopStall
+  - shop1Bottle
   - OverworldSprites_24
   - OverworldSprites_25
   - OverworldSprites_26
@@ -3628,9 +3646,9 @@ SpriteAtlas:
   - OverworldSprites_31
   - OverworldSprites_5
   - OverworldSprites_30
+  - crateYellowFruit2
   - OverworldSprites_2
   - OverworldSprites_3
-  - OverworldSprites_28
   - OverworldSprites_29
   - OverworldSprites_1
   - bow
