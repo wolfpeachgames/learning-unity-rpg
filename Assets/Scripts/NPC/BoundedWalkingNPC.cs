@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class BoundedWalkingNPC : Interactable
 {
-    private Vector3 directionVector;
-    private Transform myTransform;
+    [Header("Movement")]
     public float speed;
-    private Rigidbody2D myRigidbody;
-    private Animator anim;
+    public float moveTime;
+    private float moveTimeRemaining;
+    public float waitTime;
+    private float waitTimeRemaining;
+    private bool isMoving;
+    private Vector3 directionVector;
+    
+    [Header("Patrol Area")]
     public Collider2D bounds;
+
+    private Rigidbody2D myRigidbody;
+    private Transform myTransform;
+    private Animator anim;
 
 
     void Start()
@@ -17,15 +26,51 @@ public class BoundedWalkingNPC : Interactable
         myTransform = GetComponent<Transform>();
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        moveTimeRemaining = moveTime;
+        waitTimeRemaining = waitTime;
         ChangeDirection();
     }
 
 
     void Update()
     {
-        if (!playerInRange)
+        if (isMoving)
         {
-            Move();
+            moveTimeRemaining -= Time.deltaTime;
+            if (moveTimeRemaining <= 0)
+            {
+                moveTimeRemaining = moveTime;
+                isMoving = false;
+                anim.SetBool("moving", false);
+            }
+            if (!playerInRange)
+            {
+                Move();
+            }
+        }
+        else
+        {
+            waitTimeRemaining -= Time.deltaTime;
+            if (waitTimeRemaining <= 0)
+            {
+                waitTimeRemaining = waitTime;
+                isMoving = true;
+                anim.SetBool("moving", true);
+                ChooseDifferentDirection();
+            }
+        }
+    }
+
+
+    private void ChooseDifferentDirection()
+    {
+        Vector3 previousDirection = directionVector;
+        ChangeDirection();
+        int attempts = 0;
+        while (previousDirection == directionVector && attempts < 100)
+        {
+            attempts++;
+            ChangeDirection();
         }
     }
 
@@ -81,14 +126,7 @@ public class BoundedWalkingNPC : Interactable
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Vector3 previousDirection = directionVector;
-        ChangeDirection();
-        int attempts = 0;
-        while (previousDirection == directionVector && attempts < 100)
-        {
-            attempts++;
-            ChangeDirection();
-        }
+        ChooseDifferentDirection();
     }
 
 }
