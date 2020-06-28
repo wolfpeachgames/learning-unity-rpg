@@ -571,6 +571,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3223325230975106061, guid: 74bd65952c60f4a2dae5529b6bd72311,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223325230975106061, guid: 74bd65952c60f4a2dae5529b6bd72311,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3223325230975106062, guid: 74bd65952c60f4a2dae5529b6bd72311,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -750,6 +760,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223325230975106061, guid: 74bd65952c60f4a2dae5529b6bd72311,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223325230975106061, guid: 74bd65952c60f4a2dae5529b6bd72311,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 3223325230975106062, guid: 74bd65952c60f4a2dae5529b6bd72311,
         type: 3}

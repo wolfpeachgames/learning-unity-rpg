@@ -69337,6 +69337,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606121351624193334, guid: 8d811c136094c47f1bc413acfb002ad2,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 606121351624193334, guid: 8d811c136094c47f1bc413acfb002ad2,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d811c136094c47f1bc413acfb002ad2, type: 3}
 --- !u!1 &1003910053796722569 stripped
@@ -69802,6 +69812,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MagicBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2482053352846805226, guid: a998fb0bc64f44dbea1fbf678cefa23d,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5133799319880031747, guid: a998fb0bc64f44dbea1fbf678cefa23d,
         type: 3}
