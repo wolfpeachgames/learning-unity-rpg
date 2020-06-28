@@ -46886,7 +46886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1615219514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69362,6 +69362,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606121351624193333, guid: 8d811c136094c47f1bc413acfb002ad2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 606121351624193334, guid: 8d811c136094c47f1bc413acfb002ad2,
         type: 3}
       propertyPath: m_UiScaleMode
@@ -69421,6 +69426,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614370224033341535, guid: 8d811c136094c47f1bc413acfb002ad2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 7819458903841101423, guid: 8d811c136094c47f1bc413acfb002ad2,
         type: 3}
