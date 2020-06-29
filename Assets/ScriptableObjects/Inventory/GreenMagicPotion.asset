@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0db88f8940af4e7fa37139fc21e4707, type: 3}
+  m_Name: GreenMagicPotion
+  m_EditorClassIdentifier: 
+  itemName: Large Magic Potion
+  itemDescription: It smells really bad, but maybe that's good?
+  itemImage: {fileID: 21300000, guid: 400eb506d8aae4ee8b23e3b45871f7c1, type: 3}
+  numberHeld: 0
+  unique: 0
+  usable: 1
+  useItemEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

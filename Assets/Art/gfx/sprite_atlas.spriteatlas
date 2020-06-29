@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 663194
+    totalSpriteSurfaceArea: 663706
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1635,6 +1635,7 @@ SpriteAtlas:
   - {fileID: 5559694988392259305, guid: f76c70e318324424da617acfc6a4f36b, type: 3}
   - {fileID: 21300000, guid: 847f3315398e845498bd6cafa86d0ac6, type: 3}
   - {fileID: 21300000, guid: c68f64f54ce854498b1f391ebca594d9, type: 3}
+  - {fileID: 21300000, guid: 400eb506d8aae4ee8b23e3b45871f7c1, type: 3}
   - {fileID: 2313419830122661008, guid: 35274c862ffed4e7caa12c5c60dd5445, type: 3}
   - {fileID: 6349480184285452005, guid: 35274c862ffed4e7caa12c5c60dd5445, type: 3}
   - {fileID: -5951506096933670981, guid: 35274c862ffed4e7caa12c5c60dd5445, type: 3}
@@ -1837,6 +1838,7 @@ SpriteAtlas:
   - {fileID: -5668889886972282669, guid: 433bf26a1260c46a69608f4ff7504bdf, type: 3}
   - {fileID: 21300000, guid: 57f2ce9a932004cdd91296da51db53b4, type: 3}
   - {fileID: 21300000, guid: 35f7b72b12d0c45f9b5554c6602ae007, type: 3}
+  - {fileID: 21300000, guid: 1b3150dbbbb574d8eac8875202f93747, type: 3}
   - {fileID: 9114078935630010517, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: -8799995575176783795, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
   - {fileID: -1469879329949605291, guid: 01ee5e3c369f24361a46e98794f422d1, type: 3}
@@ -3461,6 +3463,7 @@ SpriteAtlas:
   - Inner_43
   - 1
   - Minimap Overlay
+  - Green Bottle Potion
   - cave_50
   - cave_51
   - cave_52
@@ -3663,6 +3666,7 @@ SpriteAtlas:
   - OverworldSprites_1
   - bow
   - PlayerMarker
+  - Red Potion Bottle
   - orge attack sprites_9
   - orge attack sprites_8
   - orge attack sprites_3
