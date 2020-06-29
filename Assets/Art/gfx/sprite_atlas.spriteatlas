@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6f706a385cd7f4a46ac40eadcbf8a8e6, type: 3}
-    totalSpriteSurfaceArea: 662938
+    totalSpriteSurfaceArea: 663194
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1754,6 +1754,7 @@ SpriteAtlas:
   - {fileID: 47775018648080561, guid: 35274c862ffed4e7caa12c5c60dd5445, type: 3}
   - {fileID: 21300000, guid: 329b49b6311d94850a3205a1bea99ca9, type: 3}
   - {fileID: 21300000, guid: ed558097618a84f38972ceac4baa7dfa, type: 3}
+  - {fileID: 21300000, guid: b86e273863c6a49aea37ddec9ddf4968, type: 3}
   - {fileID: -872947984015748712, guid: 7471a7c8e641e4f4eaeccfd3b935bfb7, type: 3}
   - {fileID: 4004008643541842471, guid: 7471a7c8e641e4f4eaeccfd3b935bfb7, type: 3}
   - {fileID: 6703265110210787806, guid: 7471a7c8e641e4f4eaeccfd3b935bfb7, type: 3}
@@ -3579,6 +3580,7 @@ SpriteAtlas:
   - cave_109
   - Room Blank
   - font
+  - Hero Sword
   - modified gfx melee sprites_15
   - modified gfx melee sprites_14
   - modified gfx melee sprites_13
