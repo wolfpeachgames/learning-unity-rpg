@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Soldier Sword
   itemDescription: The sword your father left you. The blade is quite dull.
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: b86e273863c6a49aea37ddec9ddf4968, type: 3}
   numberHeld: 1
   unique: 0
   usable: 1
