@@ -11,6 +11,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject inventoryContentsPanel;
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private GameObject useButton;
+    public InventoryItem currentItem;
 
 
     public void SetTextAndButton(string description, bool buttonActive)
@@ -45,8 +46,19 @@ public class InventoryManager : MonoBehaviour
     }
 
 
-    void Update()
+    public void SetupDescriptionAndButton(InventoryItem newItem)
     {
-        
+        currentItem = newItem;
+        descriptionText.text = newItem.itemDescription;
+        useButton.SetActive(newItem.usable);
+    }
+
+
+    public void UseButtonPressed()
+    {
+        if (currentItem)
+        {
+            currentItem.Use();
+        }
     }
 }

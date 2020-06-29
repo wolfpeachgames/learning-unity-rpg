@@ -882,7 +882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000028249076}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &7498488564145626491
@@ -1657,6 +1657,7 @@ MonoBehaviour:
   inventoryContentsPanel: {fileID: 1403082299213149504}
   descriptionText: {fileID: 6823392554227427879}
   useButton: {fileID: 6193786538880256464}
+  currentItem: {fileID: 0}
 --- !u!1 &5145136103009773228
 GameObject:
   m_ObjectHideFlags: 0

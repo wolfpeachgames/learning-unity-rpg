@@ -29,14 +29,11 @@ public class InventorySlot : MonoBehaviour
     }
 
 
-    void Start()
+    public void OnClick()
     {
-        
-    }
-
-
-    void Update()
-    {
-        
+        if (item)
+        {
+            inventoryManager.SetupDescriptionAndButton(item);
+        }
     }
 }
