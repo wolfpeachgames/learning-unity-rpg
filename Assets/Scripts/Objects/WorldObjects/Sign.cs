@@ -12,7 +12,7 @@ public class Sign : Interactable
 
     public virtual void Update()
     {
-        if (Input.GetButtonDown("attack") && playerInRange)
+        if (Input.GetButtonDown("Submit") && playerInRange)
         {
             Debug.Log("hello");
             if (dialogBox.activeInHierarchy)

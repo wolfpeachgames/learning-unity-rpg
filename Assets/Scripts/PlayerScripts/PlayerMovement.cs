@@ -65,16 +65,15 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.ATTACK && currentState != PlayerState.STAGGER)
+        if (Input.GetButtonDown("weaponAttack") && currentState != PlayerState.ATTACK && currentState != PlayerState.STAGGER)
         {
             StartCoroutine(AttackCo());
         }
         // TODO: ABILITY
-        else if (Input.GetButtonDown("Second Attack") && currentState != PlayerState.ATTACK && currentState != PlayerState.STAGGER)
+        else if (Input.GetButtonDown("ability") && currentState != PlayerState.ATTACK && currentState != PlayerState.STAGGER)
         {
             if (playerInventory.CheckForItem(bow)) // only allow firing arrows if player has the bow item
             {
