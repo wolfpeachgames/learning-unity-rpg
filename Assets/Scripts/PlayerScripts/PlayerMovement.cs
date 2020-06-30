@@ -18,19 +18,25 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("State and Health")]
     public PlayerState currentState;
+    // TODO: HEALTH break off health from playerMovement
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
+    // TODO: MAGIC break off magic from playerMovement
     public Signal updatePlayerMagicSignal;
 
+    // TODO: INVENTORY break off inventory from playerMovement
     [Header("Inventory")]
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
-    public Item bow;
 
     [Header("Attacking")]
+    // TODO: HEALTH break off hit from playerMovement
     public Signal playerHitSignal;
+    // TODO: ABILITY break off projectile and weapons from playerMovement
     public GameObject projectile;
+    public Item bow;
 
+    // TODO: IFRAME break off invulnerability from playerMovement
     [Header("Invulnerability Frames")]
     public Color flashColor;
     public Color regularColor;
@@ -67,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(AttackCo());
         }
+        // TODO: ABILITY
         else if (Input.GetButtonDown("Second Attack") && currentState != PlayerState.ATTACK && currentState != PlayerState.STAGGER)
         {
             if (playerInventory.CheckForItem(bow)) // only allow firing arrows if player has the bow item
@@ -110,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    // TODO: ABILITY break off into ability system
     private void MakeArrow()
     {
         if (playerInventory.currentMagic > 0)
@@ -137,6 +145,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    // TODO: ABILITY break off into ability system
     Vector3 ChooseArrowDirection()
     {
         float temp = Mathf.Atan2(myAnimator.GetFloat("moveY"), myAnimator.GetFloat("moveX")) * Mathf.Rad2Deg;
@@ -192,8 +201,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    // TODO: KNOCKBACK move knockback out of playerMovement
     public void Knock(float knockTime, float damage)
     {
+        // TODO: HEALTH
         currentHealth.RuntimeValue -= damage;
         playerHealthSignal.Raise();
         if (currentHealth.RuntimeValue > 0)
@@ -208,8 +219,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    // TODO: KNOCKBACK move knockback out of playerMovement
     private IEnumerator KnockCo(float knockTime)
     {
+        // TODO: HEALTH
         playerHitSignal.Raise();
         if (myRigidbody != null)
         {
@@ -221,6 +234,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    // TODO: IFRAME move flashing out of playerMovement
     private IEnumerator FlashCo()
     {
         int processedFlashes = 0;
