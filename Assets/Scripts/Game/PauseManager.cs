@@ -7,6 +7,7 @@ public class PauseManager : MonoBehaviour
 {
     private bool isPaused;
     public GameObject pausePanel;
+    public GameObject inventoryPanel;
     public string startMenu;
 
 
@@ -22,6 +23,10 @@ public class PauseManager : MonoBehaviour
         {
             TogglePause();
         }
+        else if (Input.GetButtonDown("inventory"))
+        {
+            ToggleInventory();
+        }
     }
 
 
@@ -36,6 +41,24 @@ public class PauseManager : MonoBehaviour
         else
         {
             pausePanel.SetActive(false);
+            inventoryPanel.SetActive(false);
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void ToggleInventory()
+    {
+        Debug.Log("PauseManager: toggleInventory");
+        isPaused = !isPaused;
+        if (isPaused)
+        {
+            inventoryPanel.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            pausePanel.SetActive(false);
+            inventoryPanel.SetActive(false);
             Time.timeScale = 1f;
         }
     }
