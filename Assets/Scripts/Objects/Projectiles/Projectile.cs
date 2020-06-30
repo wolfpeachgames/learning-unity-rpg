@@ -8,10 +8,6 @@ public class Projectile : MonoBehaviour
     public float speed;
     public Vector2 directionToMove;
 
-    [Header("Lifecycle")]
-    public float lifetime;
-    private float lifetimeRemaining;
-
     [Header("Self")]
     public Rigidbody2D myRigidbody;
 
@@ -19,31 +15,11 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
-        lifetimeRemaining = lifetime;
-    }
-
-
-    void Update()
-    {
-        lifetimeRemaining -= Time.deltaTime;
-        if (lifetimeRemaining <= 0)
-        {
-            Destroy(this.gameObject);
-        }
     }
 
 
     public void Launch(Vector2 initialVelocity)
     {
         myRigidbody.velocity = initialVelocity * speed;
-    }
-
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Destroy(this.gameObject);
-        }
     }
 }
