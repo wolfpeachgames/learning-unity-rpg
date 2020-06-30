@@ -103,4 +103,11 @@ public class Log : Enemy
             currentState = newState;
         }
     }
+
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, chaseRadius);
+        Gizmos.DrawWireSphere(transform.position, attackRadius);
+    }
 }

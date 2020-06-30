@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 3
   knockTime: 0.2
-  damage: 2
+  otherTag: Player
 --- !u!1 &8993797995578045450
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 3
   knockTime: 0.2
-  damage: 2
+  otherTag: Player
 --- !u!1 &8993797995888527036
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 3
   knockTime: 0.2
-  damage: 2
+  otherTag: Player
 --- !u!1 &8993797996751166534
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,4 +515,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 3
   knockTime: 0.2
-  damage: 2
+  otherTag: Player

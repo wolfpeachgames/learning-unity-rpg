@@ -339,6 +339,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7528097157571061611}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &134597027 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4903583895754624407, guid: 9bb93ee46a5ee489bba2db0293770aa1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6689914521968107158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &171170708
 GameObject:
   m_ObjectHideFlags: 0
@@ -72177,7 +72183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1.5
   knockTime: 0.2
-  otherTag: 
+  otherTag: Player
 --- !u!212 &1244623299890132300
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72237,7 +72243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244623299890132306}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.72, y: 12.24, z: 0}
+  m_LocalPosition: {x: -0.65, y: 13.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1376658671}
@@ -72344,7 +72350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4bf28964aa834fffae0de840701757f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lootTable: {fileID: 0}
+  lootTable: {fileID: 11400000, guid: c008d678622c44d8cb26d8dbd0d71e01, type: 2}
   currentState: 0
   hasHome: 0
   homePosition: {x: 0, y: 0}
@@ -72360,10 +72366,11 @@ MonoBehaviour:
   anim: {fileID: 1244623299890132307}
   target: {fileID: 2093955201}
   chaseRadius: 6
-  attackRadius: 0
+  attackRadius: 0.6
   projectile: {fileID: 1853098455702592668, guid: abe82c96b2e814e92bffee8060880f46,
     type: 3}
-  fireDelay: 0.4
+  fireDelay: 0.8
+  fireDelayRemaining: 0
   canFire: 1
 --- !u!1001 &1382562890197827538
 PrefabInstance:
@@ -73399,6 +73406,11 @@ PrefabInstance:
       propertyPath: regularColor.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6689914522971268628, guid: 9bb93ee46a5ee489bba2db0293770aa1,
+        type: 3}
+      propertyPath: myTriggerCollider
+      value: 
+      objectReference: {fileID: 134597027}
     - target: {fileID: 6689914522971268629, guid: 9bb93ee46a5ee489bba2db0293770aa1,
         type: 3}
       propertyPath: m_Enabled

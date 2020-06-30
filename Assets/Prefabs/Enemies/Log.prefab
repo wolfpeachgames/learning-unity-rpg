@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d72e85b006504b5caf552b5ce1d0050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lootTable: {fileID: 11400000, guid: c008d678622c44d8cb26d8dbd0d71e01, type: 2}
   currentState: 0
   hasHome: 0
   homePosition: {x: 0, y: 0}
@@ -177,7 +178,6 @@ MonoBehaviour:
   deathEffect: {fileID: 1615381151688582929, guid: 97c5ebfba94f1483f9dfefae8fc57706,
     type: 3}
   deathSignal: {fileID: 0}
-  lootTable: {fileID: 11400000, guid: c008d678622c44d8cb26d8dbd0d71e01, type: 2}
   myRigidBody: {fileID: 0}
   anim: {fileID: 0}
   target: {fileID: 0}
@@ -223,4 +223,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1.5
   knockTime: 0.2
-  damage: 1
+  otherTag: Player

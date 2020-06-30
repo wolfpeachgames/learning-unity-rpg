@@ -6,30 +6,33 @@ public class TurretLog : Log
 {
     public GameObject projectile;
     public float fireDelay;
-    private float fireDelayRemaining;
+    [SerializeField] private float fireDelayRemaining;
     public bool canFire = true;
 
 
     private void Update()
     {
-        fireDelayRemaining -= Time.deltaTime;
-        if (fireDelayRemaining <= 0)
+        if (!canFire)
         {
-            canFire = true;
-            fireDelayRemaining = fireDelay;
+            fireDelayRemaining -= Time.deltaTime;
+            if (fireDelayRemaining <= 0)
+            {
+                canFire = true;
+                fireDelayRemaining = fireDelay;
+            }
         }
     }
 
 
     public override void CheckDistance()
     {
-        //Debug.Log("Check Distance");
         if (ShouldChase())
         {
             if (canFire)
             {
                 Vector3 tempVector = target.transform.position - transform.position;
                 GameObject current = Instantiate(projectile, transform.position, Quaternion.identity);
+                Debug.Log(string.Format("TurretLog: {0}", current.name));
                 current.GetComponent<Projectile>().Launch(tempVector);
                 canFire = false;
                 ChangeState(EnemyState.WALK);
