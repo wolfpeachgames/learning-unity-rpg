@@ -19,8 +19,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("State and Health")]
     public PlayerState currentState;
     // TODO: HEALTH break off health from playerMovement
-    public FloatValue currentHealth;
-    public Signal playerHealthSignal;
+    //public FloatValue currentHealth;
+    //public Signal playerHealthSignal;
     // TODO: MAGIC break off magic from playerMovement
     public Signal updatePlayerMagicSignal;
 
@@ -202,20 +202,21 @@ public class PlayerMovement : MonoBehaviour
 
 
     // TODO: KNOCKBACK move knockback out of playerMovement
-    public void Knock(float knockTime, float damage)
+    public void Knock(float knockTime)
     {
+        StartCoroutine(KnockCo(knockTime));
         // TODO: HEALTH
-        currentHealth.RuntimeValue -= damage;
-        playerHealthSignal.Raise();
-        if (currentHealth.RuntimeValue > 0)
-        {
-            StartCoroutine(KnockCo(knockTime));
-        }
-        else
-        {
-            this.gameObject.SetActive(false);
-            currentState = PlayerState.DEAD;
-        }
+        //currentHealth.RuntimeValue -= damage;
+        //playerHealthSignal.Raise();
+        //if (currentHealth.RuntimeValue > 0)
+        //{
+        //    StartCoroutine(KnockCo(knockTime));
+        //}
+        //else
+        //{
+        //    this.gameObject.SetActive(false);
+        //    currentState = PlayerState.DEAD;
+        //}
     }
 
 

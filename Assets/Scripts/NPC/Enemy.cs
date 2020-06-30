@@ -72,10 +72,9 @@ public class Enemy : Lootable
     }
 
 
-    public void Knock(Rigidbody2D myRigidBody, float knockTime, float damage)
+    public void Knock(Rigidbody2D myRigidBody, float knockTime)
     {
         StartCoroutine(KnockCo(myRigidBody, knockTime));
-        TakeDamage(damage);
     }
 
 
