@@ -158,7 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.25
-  damage: 1
+  otherTag: 
 --- !u!1 &6689914521936831274
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.25
-  damage: 1
+  otherTag: 
 --- !u!1 &6689914522399714044
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.25
-  damage: 1
+  otherTag: 
 --- !u!1 &6689914522734157426
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.25
-  damage: 1
+  otherTag: 
 --- !u!1 &6689914522971268840
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,4 +971,4 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9206573156697963237}
-  m_Enabled: 1
+  m_Enabled: 0
