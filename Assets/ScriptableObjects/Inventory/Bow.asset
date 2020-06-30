@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Hero Bow
   itemDescription: Made from a single piece of wood and tightly strung.
   itemImage: {fileID: 21300000, guid: 57f2ce9a932004cdd91296da51db53b4, type: 3}
-  numberHeld: 0
+  numberHeld: 1
   unique: 1
   usable: 0
   useItemEvent:

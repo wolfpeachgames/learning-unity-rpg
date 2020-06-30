@@ -14,6 +14,14 @@ public class InventoryManager : MonoBehaviour
     public InventoryItem currentItem;
 
 
+    private void OnEnable()
+    {
+        ClearInventorySlots();
+        MakeInventorySlots();
+        SetTextAndButton("", false);
+    }
+
+
     public void SetTextAndButton(string description, bool buttonActive)
     {
         descriptionText.text = description;
