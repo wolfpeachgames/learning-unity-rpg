@@ -28777,13 +28777,19 @@ Transform:
   m_Father: {fileID: 1461325735}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &787106796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4731850561037062609, guid: 8d811c136094c47f1bc413acfb002ad2,
+    type: 3}
+  m_PrefabInstance: {fileID: 606121351614707683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &787106800 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 42182741480711613, guid: 8d811c136094c47f1bc413acfb002ad2,
     type: 3}
   m_PrefabInstance: {fileID: 606121351614707683}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 787106796}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ddd8a353d53543d68505868c2a0bdd4, type: 3}
@@ -69354,6 +69360,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606121351624193328, guid: 8d811c136094c47f1bc413acfb002ad2,
+        type: 3}
+      propertyPath: inventoryPanel
+      value: 
+      objectReference: {fileID: 787106796}
     - target: {fileID: 606121351624193329, guid: 8d811c136094c47f1bc413acfb002ad2,
         type: 3}
       propertyPath: m_Name

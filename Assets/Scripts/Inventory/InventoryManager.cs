@@ -27,13 +27,17 @@ public class InventoryManager : MonoBehaviour
         {
             for (int i = 0; i < playerInventory.items.Count; i++)
             {
-                GameObject blankItemSlot = Instantiate(blankInventorySlot, inventoryContentsPanel.transform.position, Quaternion.identity);
-                blankItemSlot.transform.SetParent(inventoryContentsPanel.transform);
-                InventorySlot newSlot = blankItemSlot.GetComponent<InventorySlot>();
-                if (newSlot)
+                if (playerInventory.items[i].numberHeld > 0)
                 {
-                    newSlot.Setup(playerInventory.items[i], this);
+                    GameObject blankItemSlot = Instantiate(blankInventorySlot, inventoryContentsPanel.transform.position, Quaternion.identity);
+                    blankItemSlot.transform.SetParent(inventoryContentsPanel.transform);
+                    InventorySlot newSlot = blankItemSlot.GetComponent<InventorySlot>();
+                    if (newSlot)
+                    {
+                        newSlot.Setup(playerInventory.items[i], this);
+                    }
                 }
+
             }
         }
     }
@@ -42,7 +46,7 @@ public class InventoryManager : MonoBehaviour
     void Start()
     {
         MakeInventorySlots();
-        SetTextAndButton("", false); // initialize as blank
+        SetTextAndButton("", false); // initialize description section as blank
     }
 
 
@@ -59,6 +63,23 @@ public class InventoryManager : MonoBehaviour
         if (currentItem)
         {
             currentItem.Use();
+            // clear all of the inventory slots
+            ClearInventorySlots();
+            // refill all slots with new values
+            MakeInventorySlots();
+            if (currentItem.numberHeld == 0)
+            {
+                SetTextAndButton("", false);
+            }
+        }
+    }
+
+
+    private void ClearInventorySlots()
+    {
+        for (int i = 0; i < inventoryContentsPanel.transform.childCount; i++)
+        {
+            Destroy(inventoryContentsPanel.transform.GetChild(i).gameObject);
         }
     }
 }

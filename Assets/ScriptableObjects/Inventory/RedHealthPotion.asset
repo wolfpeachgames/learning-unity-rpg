@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Large Health Potion
   itemDescription: It feels warm to the touch, what is it made from?
   itemImage: {fileID: 21300000, guid: 1b3150dbbbb574d8eac8875202f93747, type: 3}
-  numberHeld: 1
+  numberHeld: 0
   unique: 0
   usable: 1
   useItemEvent:
@@ -29,6 +29,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000}
+        m_MethodName: DecreaseAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
